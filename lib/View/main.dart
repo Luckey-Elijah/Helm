@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:senior_design/View/ResourceView.dart';
+import 'package:senior_design/View/Widgets/LoginView.dart';
 import 'CampView.dart';
 import 'MissionView.dart';
 import 'TaskView.dart';
@@ -12,6 +13,7 @@ void main()
   Widget profileView = ProfileView();
   Widget resourceView = ResourceView();
   Widget taskView = TaskView();
+  Widget loginView = LoginView();
 
   runApp(MaterialApp(
       title: "Helm",
