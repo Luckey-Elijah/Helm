@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:senior_design/View/Widgets/Button.dart';
 import 'package:senior_design/ViewModel/TaskViewModel.dart';
 
 
 class TaskView extends StatelessWidget {
 
-  TaskViewModel taskViewModel = new TaskViewModel();
+
+  Button button = new Button();
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +33,7 @@ class TaskView extends StatelessWidget {
             ),
            Align(
              alignment: Alignment(0.5, 0.5), // Changes place of widget
-             child: taskViewModel.build(context) // Created button in different class
+             child: button.build(context) // Created button in different class
            )
 
 
