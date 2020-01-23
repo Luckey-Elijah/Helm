@@ -1,18 +1,35 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:senior_design/View/Helm.dart';
 
 class Button extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    Helm helm = new Helm();
     // TODO: implement build
-    return Container(
+    return SizedBox(
+  width: 100,
+      height: 100,
       child:
-      IconButton(
+      RaisedButton(
         //alignment: Alignment(100.0, 100.0),
-          iconSize: 50.0,
-          icon: Image.asset('Assets/Icons/MindIcon.jpg'),
+
+           child: Row(
+
+             children: <Widget>[
+
+               Text("Button"),
+
+             ]
+           ),
           onPressed: () {
+
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Helm()),
+              );
             //function goes here for button action
             /* Navigator.push(
               context,
