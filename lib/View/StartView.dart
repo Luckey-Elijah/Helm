@@ -32,7 +32,7 @@ class LoginView extends StatelessWidget {
             ),
             Align(
                 alignment: Alignment(0.5, 0.5), // Changes place of widget
-                child: button.build(context) // Created button in different class
+              //  child: button.build(context) // Created button in different class
             )
 
 
