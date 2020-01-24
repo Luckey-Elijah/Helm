@@ -10,7 +10,7 @@ class Button extends StatelessWidget {
     Helm helm = new Helm();
     // TODO: implement build
     return SizedBox(
-  width: 100,
+      width: 100,
       height: 100,
       child:
       RaisedButton(

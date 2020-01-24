@@ -16,10 +16,9 @@ class MissionView extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-
             ),
             Center(
-              child: Text("Mission Page"),
+              child: Text("Misson/Mission Page"),
             )
           ],
         )

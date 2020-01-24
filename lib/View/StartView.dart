@@ -2,11 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'Widgets/Button.dart';
+import 'Widgets/LoginButton.dart';
 
 class LoginView extends StatelessWidget {
 
-
-  Button button = new Button();
+    //Button button = new Button();
+    LoginButton loginbutton = new LoginButton();
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +33,7 @@ class LoginView extends StatelessWidget {
             ),
             Align(
                 alignment: Alignment(0.5, 0.5), // Changes place of widget
-              //  child: button.build(context) // Created button in different class
+                child: loginbutton.build(context) // Created button in different class
             )
 
 
