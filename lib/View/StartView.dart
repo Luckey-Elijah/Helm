@@ -1,19 +1,22 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:senior_design/View/Widgets/ClearButton.dart';
 
 import 'Widgets/Button.dart';
 import 'Widgets/LoginButton.dart';
 
 class LoginView extends StatelessWidget {
 
-    //Button button = new Button();
-    LoginButton loginbutton = new LoginButton();
+
+  LoginButton button = new LoginButton();
+  ClearButton cButton = new ClearButton();
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
         body: Stack(
+          alignment: Alignment.topCenter,
           children: <Widget>[
             new Container(
 
@@ -27,15 +30,27 @@ class LoginView extends StatelessWidget {
               ),
 
             ),
-            Center(
-              child: Text("Tasks Page"),
+            
+            Align(
+              alignment: Alignment(0,-.5),
+              child: Image.asset('Assets/Tent.png')
 
             ),
             Align(
-                alignment: Alignment(0.5, 0.5), // Changes place of widget
-                child: loginbutton.build(context) // Created button in different class
-            )
+              alignment: Alignment(0,-.3),
+              child: Text("Helm",style: TextStyle(color: Colors.white,fontSize: 40,fontFamily: 'Gotham-Light')),
 
+            ),
+            Align(
+                alignment: Alignment(0, .0), // Changes place of widget
+                child: button.build(context)
+              // Created button in different class
+            ),
+            Align(
+                alignment: Alignment(0, .9), // Changes place of widget
+                child: cButton.build(context)
+              // Created button in different class
+            )
 
           ],
         )

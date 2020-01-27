@@ -78,3 +78,36 @@ flutter:
     - Assets/SkillsBackground.jpg
     - Assets/MindIcon.jpg
     - Assets/LoginBackground.png
+    - Assets/Tent.png
+
+  fonts:
+    - family: Gotham-Book
+      fonts:
+        - asset: Assets/Fonts/Gotham-Book.otf
+
+    - family: Gotham-Light
+      fonts:
+      - asset: Assets/Fonts/Gotham-Light.otf
+
+
+    - family: Gotham-Medium
+      fonts:
+      - asset: Assets/Fonts/Gotham-Medium.otf
+    - family: Gotham-Thin
+      fonts:
+      - asset: Assets/Fonts/Gotham-Thin.otf
+    - family: Gotham-Ultra
+      fonts:
+      - asset: Assets/Fonts/Gotham-Ultra.otf
+    - family: GothamNarrow-Black
+      fonts:
+      - asset: Assets/Fonts/GothamNarrow-Black.otf
+    - family: GothamNarrow-Book
+      fonts:
+      - asset: Assets/Fonts/GothamNarrow-Book.otf
+    - family: GothamNarrow-Thin
+      fonts:
+      - asset: Assets/Fonts/GothamNarrow-Thin.otf
+    - family: GothamNarrow-Ultra
+      fonts:
+      - asset: Assets/Fonts/GothamNarrow-Ultra.otf

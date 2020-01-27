@@ -12,17 +12,13 @@ class LoginButton extends StatelessWidget {
     // TODO: implement build
     return SizedBox(
       width: 400,
-      height: 30,
+      height: 60,
       child:
       RaisedButton(
         //alignment: Alignment(100.0, 100.0),
 
-          child: Column(
-              children: <Widget>[
+       child: Text("Start my journey", textAlign: TextAlign.center, style: TextStyle(color: Colors.white, fontSize: 20)),
 
-                Text("Start my journey", textAlign: TextAlign.center, style: TextStyle(color: Colors.white, fontSize: 20)),
-              ]
-          ),
           color: Colors.green,
           onPressed: () {
 
@@ -45,26 +41,4 @@ class LoginButton extends StatelessWidget {
   }
 }
 
-/*
-   return Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: <Widget>[
-        const SizedBox(height: 30),
-         RaisedButton(
-          onPressed: () {
 
-          },
-           textColor: Colors.white,
-           child: const Text(
-             'Start my journey',
-              style: TextStyle(fontSize: 20),
-           ),
-         ),
-
-        ],
-
-
-      ),
-    );
- */
