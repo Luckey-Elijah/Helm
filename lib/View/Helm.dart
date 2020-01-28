@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:senior_design/View/JournalEntryView.dart';
 
 import 'CampView.dart';
 import 'MissionView.dart';
@@ -16,6 +17,7 @@ class Helm extends StatelessWidget {
     Widget profileView = ProfileView();
     Widget resourceView = ResourceView();
     Widget taskView = TaskView();
+    Widget journalView = JournalEntryView();
 
     // TODO: implement build
     return Scaffold(
@@ -26,7 +28,8 @@ class Helm extends StatelessWidget {
             missionPage,
             profileView,
             resourceView,
-            taskView
+            taskView,
+          //  journalView
           ],
           scrollDirection: Axis.horizontal,
         )
