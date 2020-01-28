@@ -1,4 +1,4 @@
-# senior_design
+# Helm Mobile App
 
 A new Flutter application.
 
