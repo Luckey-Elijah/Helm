@@ -17,6 +17,8 @@ cd Helm
 flutter pub get && flutter run lib/View/main.dart
 ```
 
+You will also need to move the `google-services.json` file into the `android/app/` folder. The final path will look like `Helm/android/app/google-services.json`.
+
 ## Contributing
 
 This repository is for team members of our Senior Design Project. Those individuals will be the primary contributers to the repository.
