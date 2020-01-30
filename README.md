@@ -38,8 +38,6 @@ Generally speaking the flow will be like so:
 
 This is as simple as clicking a button on GitHub. Navigate to the [repository of the project](https://github.com/Rob2Tracy/Helm), then click the fork button at the top right corner.
 
-![Fork the repository](Assets/Documentation/fork_repo.png)
-
 After using the fork button, you’d now have the repository on your GitHub account.
 
 #### Step 2: Clone the project to your local machine
@@ -51,8 +49,6 @@ Then, clone the project by typing `git clone <the copied address>` into your com
 ```bash
 git clone git@github.com:Your-Name/Helm.git
 ```
-
-![Clone the repository](Assets/Documentation/clone_fork.png)
 
 #### Step 3: Create upstream
 
@@ -125,8 +121,4 @@ You open a pull request and if the repository owner or members like what they se
 
 To open a pull request, navigate to the forked repository as shown below.
 
-![Make a new pull request](Assets/Documentation/new_pull_request.png)
-
 You’ll see your last push branch, then click on ‘compare and pull request’.
-
-![Compare your pull request](Assets/Documentation/compare_pull_request.png)
