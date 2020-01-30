@@ -11,7 +11,7 @@ class LoginButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Helm looks up all the other views
-    Helm helm = new Helm();
+
     // TODO: implement build
     return SizedBox(
       width: 400,
