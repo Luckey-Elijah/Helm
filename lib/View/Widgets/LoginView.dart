@@ -18,6 +18,7 @@ class LoginView extends StatelessWidget {
             children: <Widget>[
               SizedBox(height: 50),
               _signInButton(),
+              _signOutButton(),
             ],
           ),
         ),
@@ -31,7 +32,7 @@ Widget _signInButton() {
     splashColor: Colors.grey,
     onPressed: () {
       signInGoogle().whenComplete(() {
-        // spawnToastMessage("Worked!");
+        spawnToastMessage("Sign In complete!");
       });
     },
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
@@ -48,6 +49,38 @@ Widget _signInButton() {
             padding: const EdgeInsets.only(left: 10),
             child: Text(
               'Sign in with Google',
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.grey,
+              ),
+            ),
+          )
+        ],
+      ),
+    ),
+  );
+}
+
+Widget _signOutButton() {
+  return OutlineButton(
+    splashColor: Colors.grey,
+    onPressed: () {
+      signOutGoogle();
+    },
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
+    highlightElevation: 0,
+    borderSide: BorderSide(color: Colors.grey),
+    child: Padding(
+      padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Image(image: AssetImage('Assets/MindIcon.jpg'), height: 35.0),
+          Padding(
+            padding: const EdgeInsets.only(left: 10),
+            child: Text(
+              'Sign out of Google',
               style: TextStyle(
                 fontSize: 20,
                 color: Colors.grey,
