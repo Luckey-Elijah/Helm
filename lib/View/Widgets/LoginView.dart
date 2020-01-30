@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:senior_design/Model/toast.dart';
+import '../../Model/sign_in.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class LoginView extends StatelessWidget {
   @override
@@ -26,7 +29,11 @@ class LoginView extends StatelessWidget {
 Widget _signInButton() {
   return OutlineButton(
     splashColor: Colors.grey,
-    onPressed: () {},
+    onPressed: () {
+      signInGoogle().whenComplete(() {
+        // spawnToastMessage("Worked!");
+      });
+    },
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
     highlightElevation: 0,
     borderSide: BorderSide(color: Colors.grey),
