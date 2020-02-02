@@ -20,7 +20,7 @@ class Button extends StatelessWidget {
 
              children: <Widget>[
 
-               Text("Button"),
+               Text("Button",style: TextStyle(fontFamily: "Gotham-Light"),),
 
              ]
            ),

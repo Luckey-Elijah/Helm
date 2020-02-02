@@ -6,6 +6,10 @@ final TextEditingController _controller = new TextEditingController();
 
 class ClearButton extends StatelessWidget {
 
+  final Widget pageToShow;
+
+  ClearButton({this.pageToShow});
+
   @override
   Widget build(BuildContext context) {
     Helm helm = new Helm();
@@ -19,20 +23,24 @@ class ClearButton extends StatelessWidget {
 
                   onPressed: () {
                     _controller.clear();
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => pageToShow),
+                    );
                   },
                   child: Text(
                     "Already a member? Log In",
-                    style: TextStyle(fontSize: 14.0),
-                  )
+                    style: TextStyle(fontSize: 14.0,fontFamily: "Gotham-Light"),
+                  ),
+
+
+
               )
 
 
 
       //function goes here for button action
-      /* Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => campView),
-            ); */
+
       // To go back to previous screen do Navigator.pop(context); in onPress area of other button
     );
   }
