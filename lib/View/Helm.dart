@@ -6,6 +6,7 @@ import 'MissionView.dart';
 import 'ProfileView.dart';
 import 'ResourceView.dart';
 import 'TaskView.dart';
+import 'DailyCheckinSlider.dart';
 
 class Helm extends StatelessWidget {
   @override
@@ -16,12 +17,14 @@ class Helm extends StatelessWidget {
     Widget profileView = ProfileView();
     Widget resourceView = ResourceView();
     Widget taskView = TaskView();
+    Widget checkin = DailyCheckin();
 
     // TODO: implement build
     return Scaffold(
         body: PageView(
           children: <Widget>[
 
+            checkin,
             campPage,
             missionPage,
             profileView,
