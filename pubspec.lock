@@ -64,15 +64,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.3"
-<<<<<<< HEAD
-=======
   firebase:
     dependency: transitive
     description:
       name: firebase
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "7.2.0"
+    version: "7.2.1"
   firebase_auth:
     dependency: "direct main"
     description:
@@ -100,7 +98,7 @@ packages:
       name: firebase_core
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.4.3+2"
+    version: "0.4.3+3"
   firebase_core_platform_interface:
     dependency: transitive
     description:
@@ -115,7 +113,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.1+2"
->>>>>>> ab66b5268de7a5469f3389c1fd6d86a82ec49c8a
   flutter:
     dependency: "direct main"
     description: flutter
@@ -126,8 +123,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-<<<<<<< HEAD
-=======
   flutter_web_plugins:
     dependency: transitive
     description: flutter
@@ -175,7 +170,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.1.3"
->>>>>>> ab66b5268de7a5469f3389c1fd6d86a82ec49c8a
   image:
     dependency: transitive
     description:
@@ -183,8 +177,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.4"
-<<<<<<< HEAD
-=======
   js:
     dependency: transitive
     description:
@@ -192,7 +184,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.1+1"
->>>>>>> ab66b5268de7a5469f3389c1fd6d86a82ec49c8a
   matcher:
     dependency: transitive
     description:
@@ -304,9 +295,5 @@ packages:
     source: hosted
     version: "3.5.0"
 sdks:
-<<<<<<< HEAD
-  dart: ">=2.4.0 <3.0.0"
-=======
   dart: ">=2.7.0-dev <3.0.0"
   flutter: ">=1.12.13+hotfix.4 <2.0.0"
->>>>>>> ab66b5268de7a5469f3389c1fd6d86a82ec49c8a
