@@ -16,12 +16,8 @@ class ClearButton extends StatelessWidget {
     // TODO: implement build
     return SizedBox(
         width: 300,
-        height: 100,
-        child:
-        new Stack(
-            children: <Widget>[
-              new TextField(controller: _controller,),
-              new FlatButton(
+        height: 50,
+        child:  new FlatButton(
                   textColor: Colors.white,
                   highlightColor: Colors.lightGreen,
 
@@ -30,17 +26,17 @@ class ClearButton extends StatelessWidget {
                   },
                   child: Text(
                     "Already a member? Log In",
-                    style: TextStyle(fontSize: 14.0),
-                  )
+                    style: TextStyle(fontSize: 14.0,fontFamily: "Gotham-Light"),
+                  ),
+
+
+
               )
 
-            ]
-        )
+
+
       //function goes here for button action
-      /* Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => campView),
-            ); */
+
       // To go back to previous screen do Navigator.pop(context); in onPress area of other button
     );
   }

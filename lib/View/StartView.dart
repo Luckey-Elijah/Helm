@@ -5,7 +5,6 @@ import 'package:senior_design/View/Widgets/ClearButton.dart';
 
 import 'Widgets/Button.dart';
 import 'Widgets/LoginButton.dart';
-import 'Widgets/ClearButton.dart';
 
 class LoginView extends StatelessWidget {
 
