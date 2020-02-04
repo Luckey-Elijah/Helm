@@ -3,12 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:senior_design/View/Helm.dart';
 
 /*
+
 Only a placeholder button that will be replaced once the DailyCheckinSlider view
 has the code to change the data of LoginButton or another button
+
+
  */
 
 
-class TempButton extends StatelessWidget {
+class JournalButton extends StatelessWidget {
+
+  String journalEntry;
+  Widget screen;
+
+  JournalButton({this.journalEntry,this.screen});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +37,7 @@ class TempButton extends StatelessWidget {
 
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Helm()),
+              MaterialPageRoute(builder: (context) => screen),
 
             );
             //function goes here for button action
@@ -45,3 +53,5 @@ class TempButton extends StatelessWidget {
 
   }
 }
+
+

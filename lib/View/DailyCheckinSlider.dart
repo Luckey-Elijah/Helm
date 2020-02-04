@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:senior_design/View/Widgets/TempButton.dart';
+import 'package:senior_design/View/Widgets/JournalButton.dart';
 import 'Widgets/TempButton.dart';
 
 
