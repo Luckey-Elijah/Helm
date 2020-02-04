@@ -2,33 +2,33 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:senior_design/View/Helm.dart';
 
-class Button extends StatelessWidget {
+
+class LoginButton extends StatelessWidget {
+
+  final Widget pageToShow;
+  LoginButton({this.pageToShow});
 
   @override
   Widget build(BuildContext context) {
-
+    // Helm looks up all the other views
 
     // TODO: implement build
     return SizedBox(
-      width: 100,
-      height: 100,
+      width: 400,
+      height: 60,
       child:
       RaisedButton(
         //alignment: Alignment(100.0, 100.0),
 
-          child: Row(
+          child: Text("Start my journey", textAlign: TextAlign.center, style: TextStyle(color: Colors.white, fontSize: 20,fontFamily: "Gotham-Light")),
 
-              children: <Widget>[
-
-                Text("Button",style: TextStyle(fontFamily: "Gotham-Light"),),
-
-              ]
-          ),
+          color: Colors.green,
           onPressed: () {
 
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Helm()),
+              MaterialPageRoute(builder: (context) => pageToShow),
+
             );
             //function goes here for button action
             /* Navigator.push(
@@ -37,9 +37,10 @@ class Button extends StatelessWidget {
             ); */
             // To go back to previous screen do Navigator.pop(context); in onPress area of other button
           }
+
       ),
     );
+
   }
-
-
 }
+

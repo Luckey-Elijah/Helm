@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:senior_design/View/Widgets/Button.dart';
 import 'package:senior_design/ViewModel/TaskViewModel.dart';
 
+import 'Widgets/GlowyButton.dart';
 
 class TaskView extends StatelessWidget {
 
-
-  Button button = new Button();
-
+GlowyButton glowButton = new GlowyButton();
+//mind, body, life, soul
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -27,19 +26,20 @@ class TaskView extends StatelessWidget {
           ),
 
             ),
-            Center(
-              child: Text("Tasks Page"),
-
-            ),
            Align(
-             alignment: Alignment(0.5, 0.5), // Changes place of widget
-             child: button.build(context) // Created button in different class
-           )
-
-
-    ],
+             alignment: Alignment(2, .25), // Changes place of widget
+             child: Column(
+                     mainAxisSize: MainAxisSize.min,
+                     children: [
+                       glowButton.build(context),
+                       glowButton.build(context),
+                       glowButton.build(context),
+                       glowButton.build(context),
+                     ]
+                 )
+             ),
+           ]
         )
-
     );
   }
 }
