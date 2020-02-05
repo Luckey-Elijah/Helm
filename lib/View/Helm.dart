@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:senior_design/View/DailyCheckinSlider.dart';
+import 'package:senior_design/View/JournalEntryView.dart';
 
 import 'CampView.dart';
 import 'MissionView.dart';
@@ -18,6 +19,7 @@ class Helm extends StatelessWidget {
     Widget profileView = ProfileView();
     Widget resourceView = ResourceView();
     Widget taskView = TaskView();
+    Widget journalView = JournalEntryView();
     Widget checkin = DailyCheckin();
 
     // TODO: implement build

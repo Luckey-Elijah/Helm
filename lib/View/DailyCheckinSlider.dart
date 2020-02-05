@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:senior_design/View/Widgets/JournalButton.dart';
 import 'package:senior_design/View/Widgets/TempButton.dart';
-import 'package:senior_design/View/Helm.dart';
 import 'Widgets/TempButton.dart';
 
 
@@ -22,7 +22,6 @@ TODO
  class _DCSlider extends State<DailyCheckin>{
 
    TempButton tempButton = new TempButton();
-   Helm helm = new Helm();
 
    double _generalMoodVal = 0.0;
    double _anxietyLevelVal = 0.0;
@@ -358,17 +357,7 @@ TODO
 
               Align(
                 alignment: Alignment(0, .7),
-                child: TempButton(
-                    pageToShow: helm,
-                  importGM: _generalMoodVal,
-                  importAnxiety: _anxietyLevelVal,
-                  importEatingWell: _eatWellVal,
-                  importExercise: _exceriseVal,
-                  importOverallEnergy: _overallEnergyVal,
-                  importProductivity: _productivityVal,
-                  importStayOrganized: _stayOrganizedVal,
-                )
-                //tempButton.build(context),
+                child: tempButton.build(context),
               )
 
             ]
