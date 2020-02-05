@@ -13,6 +13,12 @@ has the code to change the data of LoginButton or another button
 
 class TempButton extends StatelessWidget {
 
+  final Widget pageToShow;
+  double importGM, importAnxiety,importExercise,importEatingWell,importProductivity,
+  importOverallEnergy,importStayOrganized;
+  TempButton({this.pageToShow, this.importGM,this.importAnxiety, this.importExercise,
+    this.importEatingWell, this.importProductivity,this.importOverallEnergy, this.importStayOrganized});
+
   @override
   Widget build(BuildContext context) {
     // Helm looks up all the other views
@@ -29,6 +35,15 @@ class TempButton extends StatelessWidget {
 
           color: Colors.orange,
           onPressed: () {
+
+            print("YOU CLICKED ME!");
+            print(importGM);
+            print(importAnxiety);
+            print(importExercise);
+            print(importEatingWell);
+            print(importProductivity);
+            print(importOverallEnergy);
+            print(importStayOrganized);
 
             Navigator.push(
               context,
