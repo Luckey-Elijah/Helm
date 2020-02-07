@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:senior_design/View/Helm.dart';
+import 'package:senior_design/View/OnboardingView.dart';
 import 'package:senior_design/View/Widgets/ClearButton.dart';
 
 import 'Widgets/Button.dart';
@@ -12,6 +13,7 @@ class LoginView extends StatelessWidget {
   LoginButton button = new LoginButton();
   ClearButton cButton = new ClearButton();
   Helm helm = new Helm();
+  OnboardingView onView = new OnboardingView();
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +48,7 @@ class LoginView extends StatelessWidget {
             Align(
                 alignment: Alignment(0, .0), // Changes place of widget
                 child: LoginButton(
-                  pageToShow: helm,
+                  pageToShow: onView,
                 )
               // Created button in different class
             ),

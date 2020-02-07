@@ -1,14 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:senior_design/View/DailyCheckinSlider.dart';
 import 'package:senior_design/View/JournalEntryView.dart';
+import 'package:senior_design/View/OnboardingView.dart';
 
 import 'CampView.dart';
 import 'MissionView.dart';
 import 'ProfileView.dart';
 import 'ResourceView.dart';
 import 'TaskView.dart';
-import 'DailyCheckinSlider.dart';
 
 class Helm extends StatelessWidget {
   @override
@@ -19,20 +18,20 @@ class Helm extends StatelessWidget {
     Widget profileView = ProfileView();
     Widget resourceView = ResourceView();
     Widget taskView = TaskView();
-    Widget journalView = JournalEntryView();
-    Widget checkin = DailyCheckin();
+
 
     // TODO: implement build
     return Scaffold(
         body: PageView(
           children: <Widget>[
 
-            checkin,
             campPage,
             missionPage,
             profileView,
             resourceView,
-            taskView
+            taskView,
+
+            //journalView
           ],
           scrollDirection: Axis.horizontal,
         )
