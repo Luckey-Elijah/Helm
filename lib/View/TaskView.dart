@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:senior_design/ViewModel/TaskViewModel.dart';
+import 'package:senior_design/View/TaskListView.dart';
 
 import 'Widgets/GlowyButton.dart';
 
 class TaskView extends StatelessWidget {
-
-GlowyButton glowButton = new GlowyButton();
-//mind, body, life, soul
+  TaskList listView = new TaskList();
+  GlowyButton glowButton = new GlowyButton();
+  //mind, body, life, soul
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -31,10 +31,10 @@ GlowyButton glowButton = new GlowyButton();
              child: Column(
                      mainAxisSize: MainAxisSize.min,
                      children: [
-                       GlowyButton(buttonText: "Mind",),
-                       GlowyButton(buttonText: "Body",),
-                       GlowyButton(buttonText: "Life",),
-                       GlowyButton(buttonText: "Soul",)
+                       GlowyButton(buttonText: "Mind",pageToShow: listView),
+                       GlowyButton(buttonText: "Body",pageToShow: listView),
+                       GlowyButton(buttonText: "Life",pageToShow: listView),
+                       GlowyButton(buttonText: "Soul",pageToShow: listView)
                      ]
                  )
              ),
