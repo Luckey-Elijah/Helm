@@ -10,13 +10,11 @@ has the code to change the data of LoginButton or another button
 
  */
 
-
 class JournalButton extends StatelessWidget {
-
   String journalEntry;
   Widget screen;
 
-  JournalButton({this.journalEntry,this.screen});
+  JournalButton({this.journalEntry, this.screen});
 
   @override
   Widget build(BuildContext context) {
@@ -26,19 +24,17 @@ class JournalButton extends StatelessWidget {
     return SizedBox(
       width: 200,
       height: 60,
-      child:
-      RaisedButton(
-        //alignment: Alignment(100.0, 100.0),
+      child: RaisedButton(
+          //alignment: Alignment(100.0, 100.0),
 
-          child: Text("Continue", textAlign: TextAlign.center, style: TextStyle(color: Colors.white, fontSize: 20)),
-
+          child: Text("Continue",
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white, fontSize: 20)),
           color: Colors.orange,
           onPressed: () {
-
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => screen),
-
             );
             //function goes here for button action
             /* Navigator.push(
@@ -46,12 +42,7 @@ class JournalButton extends StatelessWidget {
               MaterialPageRoute(builder: (context) => campView),
             ); */
             // To go back to previous screen do Navigator.pop(context); in onPress area of other button
-          }
-
-      ),
+          }),
     );
-
   }
 }
-
-

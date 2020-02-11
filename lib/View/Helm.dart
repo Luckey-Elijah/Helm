@@ -12,29 +12,25 @@ import 'TaskView.dart';
 class Helm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     Widget campPage = CampView();
     Widget missionPage = MissionView();
     Widget profileView = ProfileView();
     Widget resourceView = ResourceView();
     Widget taskView = TaskView();
 
-
     // TODO: implement build
     return Scaffold(
         body: PageView(
-          children: <Widget>[
+      children: <Widget>[
+        campPage,
+        missionPage,
+        profileView,
+        resourceView,
+        taskView,
 
-            campPage,
-            missionPage,
-            profileView,
-            resourceView,
-            taskView,
-
-            //journalView
-          ],
-          scrollDirection: Axis.horizontal,
-        )
-    );
+        //journalView
+      ],
+      scrollDirection: Axis.horizontal,
+    ));
   }
 }
