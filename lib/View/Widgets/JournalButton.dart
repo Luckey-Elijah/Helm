@@ -3,28 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:senior_design/View/Helm.dart';
 
 /*
+
 Only a placeholder button that will be replaced once the DailyCheckinSlider view
 has the code to change the data of LoginButton or another button
+
+
  */
 
-class TempButton extends StatelessWidget {
-  final Widget pageToShow;
-  double importGM,
-      importAnxiety,
-      importExercise,
-      importEatingWell,
-      importProductivity,
-      importOverallEnergy,
-      importStayOrganized;
-  TempButton(
-      {this.pageToShow,
-      this.importGM,
-      this.importAnxiety,
-      this.importExercise,
-      this.importEatingWell,
-      this.importProductivity,
-      this.importOverallEnergy,
-      this.importStayOrganized});
+class JournalButton extends StatelessWidget {
+  String journalEntry;
+  Widget screen;
+
+  JournalButton({this.journalEntry, this.screen});
 
   @override
   Widget build(BuildContext context) {
@@ -42,18 +32,9 @@ class TempButton extends StatelessWidget {
               style: TextStyle(color: Colors.white, fontSize: 20)),
           color: Colors.orange,
           onPressed: () {
-            print("YOU CLICKED ME!");
-            print(importGM);
-            print(importAnxiety);
-            print(importExercise);
-            print(importEatingWell);
-            print(importProductivity);
-            print(importOverallEnergy);
-            print(importStayOrganized);
-
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Helm()),
+              MaterialPageRoute(builder: (context) => screen),
             );
             //function goes here for button action
             /* Navigator.push(
