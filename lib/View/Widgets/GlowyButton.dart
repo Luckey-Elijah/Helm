@@ -4,6 +4,9 @@ import 'package:senior_design/View/Helm.dart';
 final TextEditingController _controller = new TextEditingController();
 
 class GlowyButton extends StatelessWidget {
+  String buttonText;
+
+  GlowyButton({this.buttonText});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +26,7 @@ class GlowyButton extends StatelessWidget {
                     _controller.clear();
                   },
                   child: Text(
-                    "Test",
+                    buttonText,
                     style: TextStyle(
                         inherit: true,
                         fontSize: 30.0,

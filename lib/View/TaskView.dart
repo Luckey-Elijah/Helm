@@ -31,10 +31,10 @@ GlowyButton glowButton = new GlowyButton();
              child: Column(
                      mainAxisSize: MainAxisSize.min,
                      children: [
-                       glowButton.build(context),
-                       glowButton.build(context),
-                       glowButton.build(context),
-                       glowButton.build(context),
+                       GlowyButton(buttonText: "Mind",),
+                       GlowyButton(buttonText: "Body",),
+                       GlowyButton(buttonText: "Life",),
+                       GlowyButton(buttonText: "Soul",)
                      ]
                  )
              ),
