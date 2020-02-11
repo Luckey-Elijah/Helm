@@ -7,14 +7,24 @@ Only a placeholder button that will be replaced once the DailyCheckinSlider view
 has the code to change the data of LoginButton or another button
  */
 
-
 class TempButton extends StatelessWidget {
-
   final Widget pageToShow;
-  double importGM, importAnxiety,importExercise,importEatingWell,importProductivity,
-  importOverallEnergy,importStayOrganized;
-  TempButton({this.pageToShow, this.importGM,this.importAnxiety, this.importExercise,
-    this.importEatingWell, this.importProductivity,this.importOverallEnergy, this.importStayOrganized});
+  double importGM,
+      importAnxiety,
+      importExercise,
+      importEatingWell,
+      importProductivity,
+      importOverallEnergy,
+      importStayOrganized;
+  TempButton(
+      {this.pageToShow,
+      this.importGM,
+      this.importAnxiety,
+      this.importExercise,
+      this.importEatingWell,
+      this.importProductivity,
+      this.importOverallEnergy,
+      this.importStayOrganized});
 
   @override
   Widget build(BuildContext context) {
@@ -24,15 +34,14 @@ class TempButton extends StatelessWidget {
     return SizedBox(
       width: 200,
       height: 60,
-      child:
-      RaisedButton(
-        //alignment: Alignment(100.0, 100.0),
+      child: RaisedButton(
+          //alignment: Alignment(100.0, 100.0),
 
-          child: Text("Continue", textAlign: TextAlign.center, style: TextStyle(color: Colors.white, fontSize: 20)),
-
+          child: Text("Continue",
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white, fontSize: 20)),
           color: Colors.orange,
           onPressed: () {
-
             print("YOU CLICKED ME!");
             print(importGM);
             print(importAnxiety);
@@ -45,7 +54,6 @@ class TempButton extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => Helm()),
-
             );
             //function goes here for button action
             /* Navigator.push(
@@ -53,10 +61,7 @@ class TempButton extends StatelessWidget {
               MaterialPageRoute(builder: (context) => campView),
             ); */
             // To go back to previous screen do Navigator.pop(context); in onPress area of other button
-          }
-
-      ),
+          }),
     );
-
   }
 }

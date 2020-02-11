@@ -6,21 +6,10 @@ import 'MissionView.dart';
 import 'TaskView.dart';
 import 'ProfileView.dart';
 
-void main()
-{
-
+void main() {
   LoginView loginView = new LoginView();
 
   runApp(MaterialApp(
       title: "Helm",
-      home: Scaffold(
-        body: PageView(
-          children: <Widget>[
-            loginView
-          ]
-
-        )
-
-      )
-  ));
+      home: Scaffold(body: PageView(children: <Widget>[loginView]))));
 }
