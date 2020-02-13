@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:senior_design/View/JournalEntryView.dart';
 import 'package:senior_design/View/OnboardingView.dart';
+import 'package:senior_design/View/DailyCheckinSlider.dart';
 
 import 'CampView.dart';
 import 'MissionView.dart';
@@ -17,16 +18,18 @@ class Helm extends StatelessWidget {
     Widget profileView = ProfileView();
     Widget resourceView = ResourceView();
     Widget taskView = TaskView();
+    Widget dailyCheck = DailyCheckin();
 
     // TODO: implement build
     return Scaffold(
         body: PageView(
       children: <Widget>[
-        campPage,
-        missionPage,
-        profileView,
-        resourceView,
-        taskView,
+          campPage,
+          dailyCheck,
+          missionPage,
+          profileView,
+          resourceView,
+          taskView,
 
         //journalView
       ],
