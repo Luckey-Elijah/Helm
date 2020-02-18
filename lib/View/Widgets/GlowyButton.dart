@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:senior_design/View/Helm.dart';
+import 'package:senior_design/View/Widgets/RouteAnimation.dart';
 final TextEditingController _controller = new TextEditingController();
 
 class GlowyButton extends StatelessWidget {
@@ -27,7 +28,7 @@ class GlowyButton extends StatelessWidget {
                     _controller.clear();
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => pageToShow),
+                      RouteAnimation(page: (pageToShow)),
                     );
                     },
                   child: Text(
