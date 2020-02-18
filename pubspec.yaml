@@ -26,6 +26,7 @@ dependencies:
   firebase_auth:
   google_sign_in:
   fluttertoast: ^3.1.3
+  cloud_firestore: ^0.13.0+1
 
 dev_dependencies:
   flutter_test:
