@@ -8,6 +8,7 @@ has the code to change the data of LoginButton or another button
  */
 
 class TempButton extends StatelessWidget {
+
   final Widget pageToShow;
   double importGM,
       importAnxiety,
@@ -43,6 +44,7 @@ class TempButton extends StatelessWidget {
           color: Colors.orange,
           onPressed: () {
             print("YOU CLICKED ME!");
+
             print(importGM);
             print(importAnxiety);
             print(importExercise);

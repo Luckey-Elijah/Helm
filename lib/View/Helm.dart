@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:senior_design/View/JournalEntryView.dart';
-import 'package:senior_design/View/OnboardingBasicView.dart';
 import 'package:senior_design/View/OnboardingView.dart';
 
 import 'CampView.dart';
@@ -18,7 +17,6 @@ class Helm extends StatelessWidget {
     Widget profileView = ProfileView();
     Widget resourceView = ResourceView();
     Widget taskView = TaskView();
-    Widget onBasic = OnboardingBasicView();
 
     // TODO: implement build
     return Scaffold(
@@ -29,7 +27,6 @@ class Helm extends StatelessWidget {
         profileView,
         resourceView,
         taskView,
-        onBasic
 
         //journalView
       ],
