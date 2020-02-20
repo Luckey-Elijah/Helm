@@ -30,6 +30,7 @@ class JournalEntryView extends StatelessWidget {
               alignment: Alignment(.4, .7),
               child: JournalButton(
                 journalEntry: journalContorller.text,
+                buttonLabel: "Continue",
                 screen: Helm(),
               ))
         ]));
