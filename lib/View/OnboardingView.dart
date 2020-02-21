@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:senior_design/View/Helm.dart';
 import 'package:senior_design/View/Widgets/JournalButton.dart';
+import 'package:senior_design/View/Widgets/OnboardingButton.dart';
 import 'package:senior_design/View/Widgets/OnboardingSlider.dart';
 import 'package:senior_design/View/Widgets/OnboardingSwitch.dart';
 
@@ -69,7 +70,7 @@ class OnboardingView extends StatelessWidget {
               child: Text("Staying Organized"),
             ),
             OnboardingSlider(),
-            JournalButton(journalEntry: "Continue", screen: Helm())
+            OnboardingButton(buttonLabel: "Continue", screen: Helm())
           ],
         ));
   }
