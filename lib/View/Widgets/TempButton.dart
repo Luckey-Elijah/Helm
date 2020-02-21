@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:senior_design/View/Helm.dart';
+import 'package:senior_design/View/JournalEntryView.dart';
 
 /*
 Only a placeholder button that will be replaced once the DailyCheckinSlider view
@@ -30,7 +31,8 @@ class TempButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Helm looks up all the other views
-    Helm helm = new Helm();
+    //Helm helm = new Helm();
+    JournalEntryView journal = JournalEntryView();
     // TODO: implement build
     return SizedBox(
       width: 200,
@@ -55,7 +57,7 @@ class TempButton extends StatelessWidget {
 
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Helm()),
+              MaterialPageRoute(builder: (context) => JournalEntryView()),
             );
             //function goes here for button action
             /* Navigator.push(

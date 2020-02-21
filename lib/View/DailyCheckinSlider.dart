@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:senior_design/View/Widgets/JournalButton.dart';
+import 'JournalEntryView.dart';
 import 'package:senior_design/View/Widgets/TempButton.dart';
 import 'package:senior_design/View/Helm.dart';
 import 'Widgets/TempButton.dart';
@@ -21,8 +22,11 @@ TODO
 //class _DCSlider extends State<DailyCheckin> {
 
 class DailyCheckin extends StatelessWidget{
-  TempButton tempButton = new TempButton();
-  Helm helm = new Helm();
+  //TempButton tempButton = new TempButton();
+  //Helm helm = new Helm();
+  //DailyCheckin dcHelper = DailyCheckin();
+  JournalEntryView journal = JournalEntryView();
+
 
   double _generalMoodVal = 0.0;
   double _anxietyLevelVal = 0.0;
@@ -31,6 +35,7 @@ class DailyCheckin extends StatelessWidget{
   double _productivityVal = 0.0;
   double _overallEnergyVal = 0.0;
   double _stayOrganizedVal = 0.0;
+  double temp;
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +64,7 @@ class DailyCheckin extends StatelessWidget{
 
               Padding(
                 padding: const EdgeInsets.all(16),
-                child: Text("General Mood: ",
+                child: Text("General Mood: ${_generalMoodVal.toInt()} ",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                               color: Colors.white,
@@ -137,7 +142,7 @@ class DailyCheckin extends StatelessWidget{
               Padding(
                 padding: const EdgeInsets.all(5),
                 child: TempButton(
-                  pageToShow: helm,
+                  pageToShow: journal,
                   importGM: _generalMoodVal,
                   importAnxiety: _anxietyLevelVal,
                   importEatingWell: _eatWellVal,

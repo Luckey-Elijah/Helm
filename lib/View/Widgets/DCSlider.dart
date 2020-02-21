@@ -4,13 +4,17 @@ import 'package:flutter/cupertino.dart';
 /*
 This widget file will be reusable code for Daily Checkin Slider View class
  */
+
 class DCSlider extends StatefulWidget {
+  double sliderValue = 0.0;
+  //DCSlider({this.sliderValue});
+
   @override
   _DCSLIDERS createState() => new _DCSLIDERS();
 }
 
 class _DCSLIDERS extends State{
-  double sliderValue = 0.0;
+  DCSlider mySlider = new DCSlider();
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +26,7 @@ class _DCSLIDERS extends State{
           child: Text("0", textAlign: TextAlign.left, style: TextStyle(color: Colors.white)),
         ),
         Slider(
-          value: sliderValue,
+          value: mySlider.sliderValue,
           inactiveColor: Colors.black,
           activeColor: Colors.orange,
           min: 0.0,
@@ -39,9 +43,8 @@ class _DCSLIDERS extends State{
 
   void sliderStatus(double input) {
     setState(() {
-      print(sliderValue);
-      sliderValue = input;
+      print(mySlider.sliderValue);
+      mySlider.sliderValue = input;
     });
   }
-
 }
