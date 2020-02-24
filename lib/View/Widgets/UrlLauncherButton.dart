@@ -4,14 +4,19 @@ import 'package:url_launcher/url_launcher.dart';
 
 class UrlLauncherButton extends StatelessWidget {
 
+   String title, urlTemp;
+
+   UrlLauncherButton({this.title, this.urlTemp});
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return SizedBox(
-      width: 250,
+      width: 120,
       height: 50,
       child: FlatButton(
-          child: Text("Resources", style: TextStyle(color: Colors.white, fontSize: 16)),
+          //"Sleep Aid"
+          child: Text(title, style: TextStyle(color: Colors.white, fontSize: 16, fontFamily: 'Gotham-Light')),
           color: Colors.orange,
           onPressed: launchUrl,
 
@@ -22,7 +27,7 @@ class UrlLauncherButton extends StatelessWidget {
   }
 
    launchUrl() async{
-     const url = 'https://tinyurl.com/r23lyvp';
+     String url = urlTemp;
      if (await canLaunch(url)) {
        await launch(url);
      } else {
