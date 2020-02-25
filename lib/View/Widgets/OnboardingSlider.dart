@@ -19,15 +19,18 @@ class OnboardingSliderParams extends State {
           max: 100.0,
           onChanged: sliderStatus,
           value: sliderValue,
-        )
+        ),
+      //  Text(sliderValue.toInt().toString()),
       ],
     );
   }
 
-  void sliderStatus(double input) {
+  double sliderStatus(double input) {
     setState(() {
-      print(sliderValue);
+     // print(sliderValue);
       sliderValue = input;
     });
+    return sliderValue;
   }
+
 }
