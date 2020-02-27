@@ -27,6 +27,9 @@ dependencies:
 
   rflutter_alert: ^1.0.2
 
+  #This adds the Url Launcher to open up websites in the application.
+  url_launcher: ^5.2.5
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -82,6 +85,7 @@ flutter:
     - Assets/MindIcon.jpg
     - Assets/LoginBackground.png
     - Assets/Tent.png
+    - Assets/OnboardingGoalsBackground.jpg
 
   fonts:
     - family: Gotham-Book

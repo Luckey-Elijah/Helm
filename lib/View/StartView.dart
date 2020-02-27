@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:senior_design/View/Helm.dart';
+import 'package:senior_design/View/OnboardingBasicView.dart';
 import 'package:senior_design/View/OnboardingView.dart';
 import 'package:senior_design/View/Widgets/ClearButton.dart';
 
@@ -11,7 +12,8 @@ class LoginView extends StatelessWidget {
   LoginButton button = new LoginButton();
   ClearButton cButton = new ClearButton();
   Helm helm = new Helm();
-  OnboardingView onView = new OnboardingView();
+  //OnboardingView onView = new OnboardingView();
+  OnboardingBasicView onView = new OnboardingBasicView();
 
   @override
   Widget build(BuildContext context) {
