@@ -19,7 +19,7 @@ class Helm extends StatelessWidget {
     Widget profileView = ProfileView();
     Widget resourceView = ResourceView();
     Widget taskView = TaskView();
-    Widget onView = OnboardingGoals();
+   
 
     // TODO: implement build
     return Scaffold(
@@ -30,7 +30,7 @@ class Helm extends StatelessWidget {
         profileView,
         resourceView,
         taskView,
-        onView,
+
 
 
 
