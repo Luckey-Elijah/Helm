@@ -29,7 +29,7 @@ class ActualDropdownButton extends State
       items:<String>["Male","Female","Other"].map<DropdownMenuItem<String>>((String value){
         return DropdownMenuItem<String>(
           value: value,
-          child: Text(value)
+          child: Text(value,style: TextStyle(color: Colors.white,))
         );
       }).toList(),
 

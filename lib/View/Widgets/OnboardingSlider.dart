@@ -12,15 +12,26 @@ class OnboardingSliderParams extends State {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Stack(
-      alignment: Alignment.center,
+     // alignment: Alignment.center,
       children: <Widget>[
-        Slider(
+        Align(
+            alignment: Alignment(0,-1),
+           child:Text(sliderValue.toInt().toString(),style: TextStyle(color: Colors.white))),
+
+        SliderTheme(
+          data: (SliderTheme.of(context).copyWith(
+            inactiveTrackColor: Colors.white,
+            activeTrackColor: Colors.orange,
+            thumbColor: Colors.orangeAccent
+          )) ,
+        child:Slider(
           min: 0.0,
           max: 100.0,
+          inactiveColor: Colors.white,
           onChanged: sliderStatus,
           value: sliderValue,
-        ),
-      //  Text(sliderValue.toInt().toString()),
+        )),
+
       ],
     );
   }

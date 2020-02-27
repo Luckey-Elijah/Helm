@@ -82,6 +82,7 @@ flutter:
     - Assets/MindIcon.jpg
     - Assets/LoginBackground.png
     - Assets/Tent.png
+    - Assets/OnboardingGoalsBackground.jpg
 
   fonts:
     - family: Gotham-Book
