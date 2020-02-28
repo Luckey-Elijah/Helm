@@ -20,21 +20,21 @@ class Helm extends StatelessWidget {
     Widget resourceView = ResourceView();
     Widget taskView = TaskView();
     Widget onView = OnboardingGoals();
+    Widget dailyCheckinView = DailyCheckin();
 
     // TODO: implement build
     return Scaffold(
         body: PageView(
-      children: <Widget>[
-        campPage,
-        missionPage,
-        profileView,
-        resourceView,
-        taskView,
-        onView,
+        children: <Widget>[
+            campPage,
+            missionPage,
+            profileView,
+            resourceView,
+            taskView,
+            onView,
+            dailyCheckinView,
 
-
-
-        //journalView
+            //journalView
       ],
       scrollDirection: Axis.horizontal,
     ));

@@ -25,6 +25,7 @@ class _DCSLIDERS extends State{
           alignment: Alignment(-.993,0),
           child: Text("0", textAlign: TextAlign.left, style: TextStyle(color: Colors.white)),
         ),
+
         Slider(
           value: mySlider.sliderValue,
           inactiveColor: Colors.black,
