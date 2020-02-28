@@ -28,40 +28,12 @@ class OnboardingView extends StatelessWidget {
           scrollDirection: Axis.vertical,
           children: <Widget>[
 
-
-
-
-            /*
-            Padding(
-              padding: EdgeInsets.fromLTRB(16.0, 0, 0, 0),
-              child: Text(
-                  "In which of these categories are you most excited to build strength?"),
-            ),
-            OnboardingSwitch(
-              text: "Depression",
-            ),
-            OnboardingSwitch(text: "General Anxiety"),
-            OnboardingSwitch(text: "Social Anxiety"),
-            OnboardingSwitch(text: "Fitness"),
-            OnboardingSwitch(text: "Nutrition"),
-            OnboardingSwitch(text: "Productivity"),
-            OnboardingSwitch(text: "Energy"),
-            OnboardingSwitch(text: "Organization"),
-            */
-
             Padding(
               padding: EdgeInsets.fromLTRB(16.0, 0, 0, 0),
               child: Text(
                   "Think about the last week."
                       " Rate on a scale of 1-100* how you feel strong in these categories: ",textAlign: TextAlign.center, style: TextStyle(color: Colors.white)),)
             ,
-            /*
-            Padding(
-              padding: EdgeInsets.fromLTRB(25.0, 16.0, 0, 0),
-              child: Text("General Mood"),
-            ),
-
-             */
 
             Align(alignment: Alignment(0,0),
               child: Padding(
