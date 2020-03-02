@@ -19,7 +19,7 @@ class Helm extends StatelessWidget {
     Widget profileView = ProfileView();
     Widget resourceView = ResourceView();
     Widget taskView = TaskView();
-   
+
 
     // TODO: implement build
     return Scaffold(

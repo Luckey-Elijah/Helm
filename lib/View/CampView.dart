@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:senior_design/View/Widgets/BackendButton.dart';
 
+import 'Widgets/ProfileNameText.dart';
+import 'Widgets/ProfilePicture.dart';
+
 
 
 class CampView extends StatelessWidget {
@@ -18,6 +21,15 @@ class CampView extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
+        ),
+        Align(
+            alignment: Alignment(0.0,-0.8),
+            child: ProfilePicture(imagePath: 'Assets/Icons/MindIcon.jpg',)
+        ),
+
+        Align(
+            alignment: Alignment(0,-0.2),
+            child:  ProfileNameText(profileName: "Name Here",)
         ),
         Center(
           child: Text("Camp/Home Page"),

@@ -33,7 +33,7 @@ class OnboardingView extends StatelessWidget {
               child: Text(
                   "Think about the last week."
                       " Rate on a scale of 1-100* how you feel strong in these categories: ",textAlign: TextAlign.center, style: TextStyle(color: Colors.white)),)
-            ,
+    ,
 
             Align(alignment: Alignment(0,0),
               child: Padding(
