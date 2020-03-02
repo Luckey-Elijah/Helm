@@ -88,6 +88,8 @@ flutter:
     - Assets/LoginBackground.png
     - Assets/Tent.png
     - Assets/OnboardingGoalsBackground.jpg
+    - Assets/ResourcesScreen.jpg
+    - Assets/OnBoardingScreens.jpg
 
   fonts:
     - family: Gotham-Book
