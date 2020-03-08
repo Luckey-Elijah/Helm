@@ -1,4 +1,4 @@
-package com.example.senior_design
+package com.smarterventures.helm
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
