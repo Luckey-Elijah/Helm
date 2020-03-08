@@ -14,8 +14,9 @@ class JournalButton extends StatelessWidget {
   String journalEntry;
   Widget screen;
   String buttonLabel;
+  String journalTitle;
 
-  JournalButton({this.journalEntry, this.screen,this.buttonLabel});
+  JournalButton({this.journalEntry, this.journalTitle,this.screen,this.buttonLabel});
 
   @override
   Widget build(BuildContext context) {
