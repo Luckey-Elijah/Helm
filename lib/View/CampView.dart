@@ -38,15 +38,15 @@ class CampView extends StatelessWidget {
 
         Align(
           alignment: Alignment(0,0),
-          child: OnboardingButton(buttonLabel: "Daily Check-In", screen:  DailyCheckin(),),
+          child: OnboardingButton(buttonLabel: "Daily Check-In", screen:  DailyCheckin(),)),
 
         Center(
-          child: Text("Camp/Home Page"),
+         // child: Text("Camp/Home Page"),
 
         )
 
 
-        ),
+        ,
         Align(
           alignment: Alignment(0,.5),
           child: OnboardingButton(buttonLabel: "Review Check-Ins", screen:  DailyCheckinRetrieval(),),
