@@ -13,8 +13,9 @@ void main() {
   Widget profileView = ProfileView();
   Widget resourceView = ResourceView();
   Widget taskView = TaskView();
-  Widget loginView = LoginView();
+ // Widget loginView = LoginView();
 
+  /*
   runApp(MaterialApp(
       title: "Helm",
       home: Scaffold(
@@ -30,9 +31,15 @@ void main() {
         scrollDirection: Axis.horizontal,
       ))));
 
+      */
+
+
+
   LoginView loginView = new LoginView();
 
   runApp(MaterialApp(
       title: "Helm",
       home: Scaffold(body: PageView(children: <Widget>[loginView]))));
+
+
 }
