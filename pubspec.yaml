@@ -23,16 +23,8 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-  firebase_auth:
-  google_sign_in:
-  fluttertoast: ^3.1.3
-  cloud_firestore: ^0.13.0+1
-
-
   rflutter_alert: ^1.0.2
-
   charts_flutter: ^0.9.0
-
   #This adds the Url Launcher to open up websites in the application.
   url_launcher: ^5.2.5
 
@@ -100,27 +92,26 @@ flutter:
 
     - family: Gotham-Light
       fonts:
-      - asset: Assets/Fonts/Gotham-Light.otf
-
+        - asset: Assets/Fonts/Gotham-Light.otf
 
     - family: Gotham-Medium
       fonts:
-      - asset: Assets/Fonts/Gotham-Medium.otf
+        - asset: Assets/Fonts/Gotham-Medium.otf
     - family: Gotham-Thin
       fonts:
-      - asset: Assets/Fonts/Gotham-Thin.otf
+        - asset: Assets/Fonts/Gotham-Thin.otf
     - family: Gotham-Ultra
       fonts:
-      - asset: Assets/Fonts/Gotham-Ultra.otf
+        - asset: Assets/Fonts/Gotham-Ultra.otf
     - family: GothamNarrow-Black
       fonts:
-      - asset: Assets/Fonts/GothamNarrow-Black.otf
+        - asset: Assets/Fonts/GothamNarrow-Black.otf
     - family: GothamNarrow-Book
       fonts:
-      - asset: Assets/Fonts/GothamNarrow-Book.otf
+        - asset: Assets/Fonts/GothamNarrow-Book.otf
     - family: GothamNarrow-Thin
       fonts:
-      - asset: Assets/Fonts/GothamNarrow-Thin.otf
+        - asset: Assets/Fonts/GothamNarrow-Thin.otf
     - family: GothamNarrow-Ultra
       fonts:
-      - asset: Assets/Fonts/GothamNarrow-Ultra.otf
+        - asset: Assets/Fonts/GothamNarrow-Ultra.otf
