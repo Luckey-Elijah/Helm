@@ -4,6 +4,7 @@ import 'package:senior_design/View/DailyCheckinRetrieval.dart';
 import 'package:senior_design/View/Widgets/BackendButton.dart';
 import 'package:senior_design/View/Widgets/JournalButton.dart';
 import 'package:senior_design/View/Widgets/OnboardingButton.dart';
+import 'package:senior_design/View/DCThumbsUpandDown.dart';
 
 import 'DailyCheckinSlider.dart';
 import 'Widgets/ProfileNameText.dart';

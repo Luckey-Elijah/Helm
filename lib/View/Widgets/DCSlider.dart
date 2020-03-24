@@ -6,7 +6,7 @@ This widget file will be reusable code for Daily Checkin Slider View class
  */
 
 class DCSlider extends StatefulWidget {
-  double sliderValue = 0.0;
+  double sliderValue = 0.5;
   //DCSlider({this.sliderValue});
 
   @override
@@ -23,7 +23,7 @@ class _DCSLIDERS extends State{
       children: <Widget>[
         Align(
           alignment: Alignment(-.993,0),
-          child: Text("0", textAlign: TextAlign.left, style: TextStyle(color: Colors.white)),
+          child: Text("👍", textAlign: TextAlign.left, style: TextStyle(color: Colors.white)),
         ),
 
         Slider(
@@ -31,12 +31,13 @@ class _DCSLIDERS extends State{
           inactiveColor: Colors.black,
           activeColor: Colors.orange,
           min: 0.0,
-          max: 100.0,
+          max: 1.0,
+          divisions: 2,
           onChanged: sliderStatus,
         ),
       Align(
           alignment: Alignment(.993,0),
-          child: Text("100", textAlign: TextAlign.right, style: TextStyle(color: Colors.white))
+          child: Text("👎", textAlign: TextAlign.right, style: TextStyle(color: Colors.white))
         ),
       ],
     );

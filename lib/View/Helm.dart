@@ -25,11 +25,11 @@ class Helm extends StatelessWidget {
     return Scaffold(
         body: PageView(
       children: <Widget>[
-        campPage,
-        missionPage,
-        profileView,
-        resourceView,
-        taskView,
+          campPage,
+          missionPage,
+          profileView,
+          resourceView,
+          taskView,
 
 
 
