@@ -56,7 +56,11 @@ packages:
       name: cloud_firestore
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "0.13.4+2"
+=======
+    version: "0.13.4+1"
+>>>>>>> f2400648cdac292cc4375fd12d23876ae37a98c3
   cloud_firestore_platform_interface:
     dependency: transitive
     description:
@@ -70,7 +74,11 @@ packages:
       name: cloud_firestore_web
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "0.1.1+2"
+=======
+    version: "0.1.1+1"
+>>>>>>> f2400648cdac292cc4375fd12d23876ae37a98c3
   collection:
     dependency: transitive
     description:
@@ -176,21 +184,33 @@ packages:
       name: google_sign_in
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "4.2.0"
+=======
+    version: "4.1.4"
+>>>>>>> f2400648cdac292cc4375fd12d23876ae37a98c3
   google_sign_in_platform_interface:
     dependency: transitive
     description:
       name: google_sign_in_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "1.1.0"
+=======
+    version: "1.0.4"
+>>>>>>> f2400648cdac292cc4375fd12d23876ae37a98c3
   google_sign_in_web:
     dependency: transitive
     description:
       name: google_sign_in_web
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "0.8.4"
+=======
+    version: "0.8.3+2"
+>>>>>>> f2400648cdac292cc4375fd12d23876ae37a98c3
   http:
     dependency: transitive
     description:
@@ -204,7 +224,11 @@ packages:
       name: http_parser
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "3.1.4"
+=======
+    version: "3.1.3"
+>>>>>>> f2400648cdac292cc4375fd12d23876ae37a98c3
   image:
     dependency: transitive
     description:
