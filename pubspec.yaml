@@ -14,7 +14,7 @@ description: A new Flutter application.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.2.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -28,6 +28,9 @@ dependencies:
   rflutter_alert: ^1.0.2
 
   charts_flutter: ^0.9.0
+
+  #This adds ability to use camera or gallery photos
+  image_picker: ^0.6.4
 
   #This adds the Url Launcher to open up websites in the application.
   url_launcher: ^5.2.5
