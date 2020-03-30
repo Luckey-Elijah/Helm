@@ -1,6 +1,5 @@
 import 'dart:io';
-
-//import 'package:image_picker/image_picker.dart';
+import 'package:image_picker/image_picker.dart';
 
 // Profile data model for the user.
 class ProfileData {
@@ -8,6 +7,8 @@ class ProfileData {
   String bio;
   String imagePath;
   File imageFile;
+
+  //final String keyPrefix = 'profile-';
 
   ProfileData({this.name, this.bio, this.imagePath}) {
     this.imageFile = new File(this.imagePath);
@@ -29,17 +30,19 @@ class ProfileData {
     this.bio = bio;
   }
 
-  // This is how to get gallery image or camera image
-  /*Future selectGalleryImage() async {
+  // Brings up system screen for the phone's gallery
+  Future selectGalleryImage() async {
     var image = await ImagePicker.pickImage(source: ImageSource.gallery);
-    print('image: $image');
-    print('imagePath: ' + image.path);
     if(image != null)
+    {
+      print('image: $image');
+      print('imagePath: ' + image.path);
       this.imageFile = image;
-    this.imagePath = image.path;
+      this.imagePath = image.path;
+    }
   }
 
-  //
+  // Brings up system screen for the phone's camera
   Future selectCameraImage() async {
     var image = await ImagePicker.pickImage(source: ImageSource.camera);
     if(image != null)
@@ -49,6 +52,6 @@ class ProfileData {
       this.imageFile = image;
       this.imagePath = image.path;
     }
-  }*/
+  }
 
 }
