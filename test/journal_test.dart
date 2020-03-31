@@ -1,12 +1,49 @@
+import 'package:senior_design/Model/entry.dart';
+import 'package:senior_design/Model/journal.dart';
 import 'package:test/test.dart';
-import '../lib/Model/journal.dart';
 
 /// This source file runs a series of test on the [Journal] object.
 
-// Test 1: Maximum number of entries in a Journal.
+void main() {
+  Journal testJournal;
+  maxNumberEntriesTest(testJournal);
+}
 
-// Test 2: Maximum character count in a Entry's body field.
+void maxNumberEntriesTest(Journal testJournal) {
+  // Start test
+  test(
+    """
+  Journal.addEntry() should keep writting the Journal as long as there is 
+  room in the device's storage """,
+    () {
+      expect(() {
+        var counter = 0;
+        while (true) {
+          counter++;
+          testJournal.addEntry(Entry.now());
+        }
+        // Looking for at least one year of entriess
+      }, greaterThan(365));
+    },
+  );
 
-// Test 3: Speed test on writing/reading an Entry.
+  // Test clean up
+  testJournal.entryList.forEach((element) {
+    testJournal.removeEntry(element);
+  });
+}
 
-// Test 4: Speed on reading an Entry.
+void maxCharacterCountTest(Entry testEntry) {
+  testEntry.body = 'Sample string';
+  test('''
+  Entry.body member should be larger than 500 character maximum.
+  ''', () {
+    expect(() {
+      for (var i = 0; i < 10; i++) {
+        testEntry.body = testEntry.body + '0123456789';
+      }
+      return testEntry.body.length;
+      // Looking for at leat 500 characters in a body String
+    }, greaterThan(500));
+  });
+}
