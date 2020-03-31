@@ -39,6 +39,11 @@ class Journal {
     entryList.remove(entry);
   }
 
+  /// Accesses [entryList] to return a Stream of the [Entry] elements.
+  Stream<Entry> getStream() async* {
+    Stream.fromIterable(entryList);
+  }
+
   /// Loads each [Entry] from the local storage.
   _loadEntries() async {
     List<Map<String, dynamic>> jsonEntries =
