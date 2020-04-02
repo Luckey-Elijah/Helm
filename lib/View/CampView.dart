@@ -21,7 +21,7 @@ class CampView extends StatelessWidget {
         new Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('Assets/CampBackground.png'),
+              image: AssetImage('Assets/CampBackground.jpg'),
               fit: BoxFit.cover,
             ),
           ),

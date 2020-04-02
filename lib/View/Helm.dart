@@ -29,7 +29,7 @@ class Helm extends StatelessWidget {
           missionPage,
           profileView,
           resourceView,
-          taskView,
+          //taskView,
 
 
 

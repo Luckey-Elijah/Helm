@@ -82,12 +82,12 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - Assets/TaskBackgroundImage.png
-    - Assets/MissionBackground.png
-    - Assets/CampBackground.png
+    - Assets/MissionBackground.jpg
+    - Assets/CampBackground.jpg
     - Assets/ResourceBackground.jpg
     - Assets/SkillsBackground.jpg
     - Assets/MindIcon.jpg
-    - Assets/LoginBackground.png
+    - Assets/LoginBackground.jpg
     - Assets/Tent.png
     - Assets/OnboardingGoalsBackground.jpg
     - Assets/ResourcesScreen.jpg
