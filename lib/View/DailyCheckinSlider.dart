@@ -66,7 +66,7 @@ class DailyCheckin extends StatelessWidget{
 
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text("Think About the last week. Rate on scale of 1-100 how you feel strong in these catagories:",
+                  child: Text("Think About the last week. Rate on scale of thumbs up or thumbs down on how you feel strong in these catagories:",
                       textAlign: TextAlign.center,
                       style: TextStyle(color: Colors.white, fontSize: 16, fontFamily: 'Gotham-Light')),
                 ),
@@ -74,7 +74,7 @@ class DailyCheckin extends StatelessWidget{
 
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text("General Mood: ${_generalMoodVal.toInt()} ",
+                  child: Text("General Mood?",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                 color: Colors.white,
@@ -85,7 +85,7 @@ class DailyCheckin extends StatelessWidget{
 
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text("Anxiety Level: ",
+                  child: Text("Anxiety Level? ",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.white,
@@ -96,7 +96,7 @@ class DailyCheckin extends StatelessWidget{
 
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text("Excerise: ",
+                  child: Text("Excerise? ",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.white,
@@ -107,7 +107,7 @@ class DailyCheckin extends StatelessWidget{
 
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text("Eating Well: ",
+                  child: Text("Eating Well? ",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.white,
@@ -118,7 +118,7 @@ class DailyCheckin extends StatelessWidget{
 
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text("Productivity: ",
+                  child: Text("Productivity? ",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.white,
@@ -129,7 +129,7 @@ class DailyCheckin extends StatelessWidget{
 
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text("Overall Energy: ",
+                  child: Text("Overall Energy? ",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.white,
@@ -140,7 +140,7 @@ class DailyCheckin extends StatelessWidget{
 
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text("Staying Organized: ",
+                  child: Text("Staying Organized? ",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.white,

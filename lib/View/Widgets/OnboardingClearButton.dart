@@ -9,9 +9,6 @@ class OnboardingClearButton extends StatefulWidget
   OnboardingClearButton({this.height,this.width,this.buttonText});
   @override
   ClearButtonState createState() => new ClearButtonState(height: height,width: width,buttonText: buttonText);
-
-
-
 }
 
 class ClearButtonState extends State {
