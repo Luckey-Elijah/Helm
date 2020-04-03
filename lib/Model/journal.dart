@@ -19,13 +19,14 @@ class Journal {
 
   /// Adds a new [Entry] to the [entryList] and to [JsonStore] in JSON format.
   /// If [dateTime] is not provided, it's initialized with [DateTime.now()]
-  addEntry(Entry entry) {
+  addEntry(Entry entry) async {
     entry.dateTime ?? DateTime.now();
     entryList.add(entry);
     String entryKey = '$keyPrefix${entry.dateTime}';
-
+    Map<String, dynamic> entryJson = entry.toJson();
+    print(entryJson);
     // Write to the device with the JsonStore object
-    jsonStore.setItem(entryKey, entry.toJson());
+    await jsonStore.setItem(entryKey, entryJson);
   }
 
   /// Removes the [Entry] provided from both [jsonStore] and [entryList]

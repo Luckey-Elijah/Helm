@@ -9,6 +9,7 @@ class JournalButton extends StatelessWidget {
   String buttonLabel;
   String journalTitle;
   String journalBody;
+  String journalEntry;
 
   Journal journal = Journal();
 
@@ -17,7 +18,6 @@ class JournalButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Entry entry = Entry.now();
     // Helm looks up all the other views
     Helm helm = new Helm();
     // TODO: implement build
@@ -30,10 +30,13 @@ class JournalButton extends StatelessWidget {
               style: TextStyle(color: Colors.white, fontSize: 20)),
           color: Colors.orange,
           onPressed: () {
-            entry
-              ..body = journalBody
-              ..title = journalTitle;
-            journal.addEntry(entry);
+            journal.addEntry(
+              Entry(
+                body: journalBody,
+                title: journalTitle,
+                dateTime: DateTime.now(),
+              ),
+            );
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => screen),

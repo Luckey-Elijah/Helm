@@ -23,7 +23,6 @@ class Entry {
   Map<String, dynamic> toJson() => {
         'title': title,
         'body': body,
-        // "Writing to" is left in String format not DateTime
-        'dateTime': dateTime,
+        'dateTime': dateTime.toString(),
       };
 }
