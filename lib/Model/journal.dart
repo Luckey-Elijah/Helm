@@ -1,5 +1,6 @@
 import 'entry.dart';
 import 'package:json_store/json_store.dart';
+export 'entry.dart';
 
 /// Used to manage each [Entry] being access and created on the device.
 class Journal {
@@ -31,7 +32,7 @@ class Journal {
 
   /// Removes the [Entry] provided from both [jsonStore] and [entryList]
   removeEntry(Entry entry) async {
-    final String entryKey = '$keyPrefix$entry.dateTime';
+    final String entryKey = '$keyPrefix${entry.dateTime}';
 
     // delete from storage
     await jsonStore.deleteItem(entryKey);
