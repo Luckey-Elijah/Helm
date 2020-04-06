@@ -41,14 +41,15 @@ class JournalEntryView extends StatelessWidget {
                   minLines: 2,
                   maxLines: 10,
                   decoration: InputDecoration(border: OutlineInputBorder()))),
-          Align(
+          /*Align(
+
               alignment: Alignment(.4, .7),
               child: JournalButton(
                 journalTitle: titleController.text,
                 journalEntry: journalContorller.text,
                 buttonLabel: "Continue",
                 screen: Helm(),
-              ))
+              ))*/
         ]));
   }
 }

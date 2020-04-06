@@ -23,7 +23,7 @@ class MissionButton extends StatelessWidget {
             children: <Widget>[
               new OutlineButton(
                   textColor: Colors.white,
-                  highlightedBorderColor: Colors.black,
+                  color: Colors.orange,
 
                   onPressed: () => MissionPopup(context, missionTitle, missionDescription),
 
@@ -31,7 +31,8 @@ class MissionButton extends StatelessWidget {
                     missionTitle,
                     style: TextStyle(
                         inherit: true,
-                        fontSize: 32.0,
+                        fontSize: 28.0,
+                        fontFamily: 'GothamNarrow-Book',
                         color: pressAttention ? Colors.white : Colors.green,
                     ),
                   )
@@ -61,7 +62,7 @@ MissionPopup(BuildContext context,String missionTitle, String missionDescription
           style: TextStyle(color: Colors.white, fontSize: 20),
         ),
         onPressed: ()  => Navigator.pop(context),
-        color: Color.fromRGBO(0, 179, 134, 1.0),
+        color: Colors.orange
       ),
       DialogButton(
         child: Text(
@@ -69,10 +70,7 @@ MissionPopup(BuildContext context,String missionTitle, String missionDescription
           style: TextStyle(color: Colors.white, fontSize: 20),
         ),
         onPressed: ()  => pressAttention = !pressAttention && Navigator.pop(context),
-        gradient: LinearGradient(colors: [
-          Color.fromRGBO(116, 116, 191, 1.0),
-          Color.fromRGBO(52, 138, 199, 1.0)
-        ]),
+        color: Colors.green,
       )
     ],
   ).show();
