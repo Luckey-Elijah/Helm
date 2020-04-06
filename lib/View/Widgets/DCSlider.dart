@@ -3,11 +3,15 @@ import 'package:flutter/cupertino.dart';
 
 /*
 This widget file will be reusable code for Daily Checkin Slider View class
+
+When the user moves the slider to the left for 👍, the sliderVale will be equaled to 0.0.
+When the user moves the slider to the right for 👎, the sliderVale will be equaled to 1.0.
+The default sliderValue is 0.5 with no selection.
+
  */
 
 class DCSlider extends StatefulWidget {
   double sliderValue = 0.5;
-  //DCSlider({this.sliderValue});
 
   @override
   _DCSLIDERS createState() => new _DCSLIDERS();

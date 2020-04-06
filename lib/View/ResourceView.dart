@@ -2,13 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:senior_design/View/Widgets/UrlLauncherButton.dart';
 
+/*
+=============================
+=      Resource View        =
+=============================
+
+The resource view contains buttons that will take the user to an extrenal resource site.
+
+ */
+
 class ResourceView extends StatelessWidget {
   UrlLauncherButton Urlbotton = new UrlLauncherButton();
-  /*
-  TODO
-  1. Build Dummy Button with an External Link
-  2. Place it in here
-   */
 
   @override
   Widget build(BuildContext context) {

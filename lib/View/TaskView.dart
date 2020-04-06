@@ -31,11 +31,11 @@ class TaskView extends StatelessWidget {
         ),
           Align(
             alignment: Alignment(0.5, 0.5), // Changes place of widget
-            child: button.build(context) // Created button in different class
+            child: glowButton.build(context) // Created button in different class
           )
         ],
       ));
-
+/*
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('Assets/TaskBackgroundImage.png'),
@@ -76,7 +76,7 @@ class TaskView extends StatelessWidget {
             )
       ],
     ));
-
+*/
 
 /*
             ),
