@@ -20,9 +20,9 @@ class GlowyButton extends StatelessWidget {
         child:
         new Stack(
             children: <Widget>[
-              new OutlineButton(
-                  textColor: Colors.white,
-                   highlightedBorderColor: Colors.orange[300],
+              new RaisedButton(
+                  color: Colors.orange,
+                  padding: EdgeInsets.all(15.0),
 
                   onPressed: () {
                     _controller.clear();
@@ -37,24 +37,7 @@ class GlowyButton extends StatelessWidget {
                         inherit: true,
                         fontSize: 30.0,
                         color: Colors.white,
-                        shadows: [
-                          Shadow( // bottomLeft
-                              offset: Offset(-1.5, -1.5),
-                              color: Colors.black
-                          ),
-                          Shadow( // bottomRight
-                              offset: Offset(1.5, -1.5),
-                              color: Colors.black
-                          ),
-                          Shadow( // topRight
-                              offset: Offset(1.5, 1.5),
-                              color: Colors.black
-                          ),
-                          Shadow( // topLeft
-                              offset: Offset(-1.5, 1.5),
-                              color: Colors.black
-                          ),
-                        ]
+                        fontFamily: 'GothamNarrow-Book',
                     ),
                   )
               )

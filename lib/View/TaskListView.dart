@@ -24,7 +24,23 @@ class TaskList extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     UnclickableButton(buttonText: this.title,),
-                    MissionButton(missionTitle: 'Excercise More', missionDescription: '10 Pushups \n 30 jumping jacks',)
+                    if (this.title == 'Mind')
+                      (
+                        MissionButton(missionTitle: 'Read More', missionDescription: 'Finish at least one book this month',)
+                      ),
+                    if (this.title == 'Body')
+                      (
+                        MissionButton(missionTitle: 'Excercise More', missionDescription: '10 Pushups \n 30 jumping jacks',)
+                      ),
+                    if (this.title == 'Life')
+                      (
+                        MissionButton(missionTitle: 'Spend more time with Friends', missionDescription: 'Go out with friends at least oncce this month',)
+                      ),
+                    if (this.title == 'Soul')
+                      (
+                        MissionButton(missionTitle: 'Get Outside More', missionDescription: 'Spend 20 minutes outside',)
+                      )
+
                   ]
               )
           ),
