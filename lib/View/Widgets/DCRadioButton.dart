@@ -7,6 +7,8 @@ The Radio button class will make a row with a button for
 //👍 For thumbs up
 // 👎 for thumbs down
 
+Unused code
+
  */
 
 class DCRadioButton extends StatelessWidget
