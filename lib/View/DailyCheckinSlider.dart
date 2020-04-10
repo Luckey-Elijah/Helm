@@ -7,24 +7,20 @@ import 'package:senior_design/View/Helm.dart';
 import 'Widgets/TempButton.dart';
 import 'Widgets/DCSlider.dart';
 
+
 /*
-class DailyCheckin extends StatefulWidget {
-  @override
-  _DCSlider createState() => _DCSlider();
-}
-*/
-/*
-TODO
-1. Export the data from the slider to the database
+=============================
+=Daily Check in Slider Class=
+=============================
+
+This class is the screen view for the Daily Checkin.
+The sliders are called into this file, and once the user selects yes or no, the
+answer will be passed into the backend.
+
  */
 
-//Daily Check in Slider Class
-//class _DCSlider extends State<DailyCheckin> {
 
 class DailyCheckin extends StatelessWidget{
-  //TempButton tempButton = new TempButton();
-  //Helm helm = new Helm();
-  //DailyCheckin dcHelper = DailyCheckin();
   JournalEntryView journal = JournalEntryView();
 
 

@@ -6,7 +6,7 @@ import 'TaskListView.dart';
 import 'Widgets/MissionButton.dart';
 
 class MissionView extends StatelessWidget {
-  MissionButton glowButton = new MissionButton();
+  MissionButton missionButton = new MissionButton();
   GlowyButton glowyButton = new GlowyButton();
   TaskList listViewMind = new TaskList(title: 'Mind');
   TaskList listViewBody = new TaskList(title: 'Body');
@@ -26,26 +26,21 @@ class MissionView extends StatelessWidget {
             ),
           ),
         ),
-        Center(
-          child:
-          Row(
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+          Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                 Align(
-                        alignment: Alignment(2, .25), // Changes place of widget
-                        child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              GlowyButton(buttonText: "Mind",pageToShow: listViewMind),
-                              GlowyButton(buttonText: "Body",pageToShow: listViewBody),
-                              GlowyButton(buttonText: "Life",pageToShow: listViewLife),
-                              GlowyButton(buttonText: "Soul",pageToShow: listViewSoul)
-                            ]
-                    ),
-            )
-            ]
+                GlowyButton(buttonText: "Mind",pageToShow: listViewMind),
+                GlowyButton(buttonText: "Body",pageToShow: listViewBody),
+                GlowyButton(buttonText: "Life",pageToShow: listViewLife),
+                GlowyButton(buttonText: "Soul",pageToShow: listViewSoul)
+              ]
           )
+        ]
         )
       ],
     ));
