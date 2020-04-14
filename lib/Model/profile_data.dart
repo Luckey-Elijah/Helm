@@ -8,7 +8,7 @@ class ProfileData {
   String imagePath;
   File imageFile;
 
-  //final String keyPrefix = 'profile-';
+  final String keyPrefix = 'profile-';
 
   ProfileData({this.name, this.bio, this.imagePath}) {
     this.imageFile = new File(this.imagePath);
@@ -53,5 +53,16 @@ class ProfileData {
       this.imagePath = image.path;
     }
   }
+
+  ProfileData.fromJson(Map<String, dynamic> json)
+      : this.name = json['name'],
+        this.bio = json['bio'],
+        this.imagePath = json['imagePath'];
+  
+  Map<String, dynamic> toJson() => {
+        'name': name,
+        'bio': bio,
+        'imagePath': imagePath,
+      };
 
 }
