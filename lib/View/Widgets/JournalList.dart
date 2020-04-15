@@ -24,9 +24,11 @@ class JournalList extends StatelessWidget
 
       itemBuilder: (context,index){
         return ListTile(
-          title: Text(list[index].journalName + index.toString()),
+          title: Text(list[index].journalName ),
           onTap:(){
-            JournalView(name: list[index].journalName, content: list[index].journalEntry, date: list[index].journalDate,);
+          //  print("tap");
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> JournalView(name: list[index].journalName, content: list[index].journalEntry, date: list[index].journalDate.toString(),index: index,)));
+
 
           } ,
 

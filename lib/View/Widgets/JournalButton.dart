@@ -7,8 +7,8 @@ import '../../Model/entry.dart';
 class JournalButton extends StatelessWidget {
   Widget screen;
   String buttonLabel;
-  String journalTitle;
-  String journalBody;
+  TextEditingController journalTitle;
+  TextEditingController journalBody;
   String journalEntry;
 
   Journal journal = Journal();
@@ -16,9 +16,13 @@ class JournalButton extends StatelessWidget {
   JournalButton(
       {this.screen, this.buttonLabel, this.journalBody, this.journalTitle});
 
+
+
   @override
   Widget build(BuildContext context) {
     // Helm looks up all the other views
+
+
     Helm helm = new Helm();
     // TODO: implement build
     return SizedBox(
@@ -29,11 +33,15 @@ class JournalButton extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(color: Colors.white, fontSize: 20)),
           color: Colors.orange,
+
           onPressed: () {
+             print(journalTitle.text);
+              print(journalBody.text);
+
             journal.addEntry(
               Entry(
-                body: journalBody,
-                title: journalTitle,
+                body: journalBody.text,
+                title: journalTitle.text,
                 dateTime: DateTime.now(),
               ),
             );
@@ -41,7 +49,14 @@ class JournalButton extends StatelessWidget {
               context,
               MaterialPageRoute(builder: (context) => screen),
             );
+
+          // journalTitle.dispose();
+          // journalBody.dispose();
           }),
-    );
+
+
+
+
+      );
   }
 }
