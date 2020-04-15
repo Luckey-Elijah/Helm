@@ -54,10 +54,6 @@ class ProfileView extends StatelessWidget {
             child: StatGraph()
         ),
 
-
-
-
-
       ],
     ));
   }

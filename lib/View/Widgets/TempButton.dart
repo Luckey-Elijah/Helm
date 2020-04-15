@@ -32,6 +32,8 @@ class TempButton extends StatelessWidget {
   Widget build(BuildContext context) {
     // Helm looks up all the other views
     //Helm helm = new Helm();
+
+
     JournalEntryView journal = JournalEntryView();
     // TODO: implement build
     return SizedBox(

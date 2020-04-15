@@ -7,24 +7,20 @@ import 'package:senior_design/View/Helm.dart';
 import 'Widgets/TempButton.dart';
 import 'Widgets/DCSlider.dart';
 
+
 /*
-class DailyCheckin extends StatefulWidget {
-  @override
-  _DCSlider createState() => _DCSlider();
-}
-*/
-/*
-TODO
-1. Export the data from the slider to the database
+=============================
+=Daily Check in Slider Class=
+=============================
+
+This class is the screen view for the Daily Checkin.
+The sliders are called into this file, and once the user selects yes or no, the
+answer will be passed into the backend.
+
  */
 
-//Daily Check in Slider Class
-//class _DCSlider extends State<DailyCheckin> {
 
 class DailyCheckin extends StatelessWidget{
-  //TempButton tempButton = new TempButton();
-  //Helm helm = new Helm();
-  //DailyCheckin dcHelper = DailyCheckin();
   JournalEntryView journal = JournalEntryView();
 
 
@@ -66,7 +62,7 @@ class DailyCheckin extends StatelessWidget{
 
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text("Think About the last week. Rate on scale of 1-100 how you feel strong in these catagories:",
+                  child: Text("Think About the last week. Rate on scale of thumbs up or thumbs down on how you feel strong in these catagories:",
                       textAlign: TextAlign.center,
                       style: TextStyle(color: Colors.white, fontSize: 16, fontFamily: 'Gotham-Light')),
                 ),
@@ -74,7 +70,7 @@ class DailyCheckin extends StatelessWidget{
 
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text("General Mood: ${_generalMoodVal.toInt()} ",
+                  child: Text("General Mood?",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                 color: Colors.white,
@@ -85,7 +81,7 @@ class DailyCheckin extends StatelessWidget{
 
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text("Anxiety Level: ",
+                  child: Text("Anxiety Level? ",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.white,
@@ -96,7 +92,7 @@ class DailyCheckin extends StatelessWidget{
 
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text("Excerise: ",
+                  child: Text("Excerise? ",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.white,
@@ -107,7 +103,7 @@ class DailyCheckin extends StatelessWidget{
 
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text("Eating Well: ",
+                  child: Text("Eating Well? ",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.white,
@@ -118,7 +114,7 @@ class DailyCheckin extends StatelessWidget{
 
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text("Productivity: ",
+                  child: Text("Productivity? ",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.white,
@@ -129,7 +125,7 @@ class DailyCheckin extends StatelessWidget{
 
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text("Overall Energy: ",
+                  child: Text("Overall Energy? ",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.white,
@@ -140,7 +136,7 @@ class DailyCheckin extends StatelessWidget{
 
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text("Staying Organized: ",
+                  child: Text("Staying Organized? ",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.white,

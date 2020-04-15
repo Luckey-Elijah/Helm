@@ -34,7 +34,7 @@ class OnboardingButton extends StatelessWidget
             ); */
             // To go back to previous screen do Navigator.pop(context); in onPress area of other button
           }),
-    );;
+    );
   }
 
 }

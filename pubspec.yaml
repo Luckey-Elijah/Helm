@@ -14,7 +14,9 @@ description: A new Flutter application.
 version: 1.0.0+1
 
 environment:
+
   sdk: ">=2.2.0 <3.0.0"
+
 
 dependencies:
   flutter:
@@ -24,6 +26,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   json_store:
+  image_picker:
+  test:
 
   rflutter_alert: ^1.0.2
 
@@ -81,12 +85,12 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - Assets/TaskBackgroundImage.png
-    - Assets/MissionBackground.png
-    - Assets/CampBackground.png
+    - Assets/MissionBackground.jpg
+    - Assets/CampBackground.jpg
     - Assets/ResourceBackground.jpg
     - Assets/SkillsBackground.jpg
     - Assets/MindIcon.jpg
-    - Assets/LoginBackground.png
+    - Assets/LoginBackground.jpg
     - Assets/Tent.png
     - Assets/OnboardingGoalsBackground.jpg
     - Assets/ResourcesScreen.jpg
