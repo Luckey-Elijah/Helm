@@ -11,7 +11,8 @@ class ProfileData {
   final String keyPrefix = 'profile-';
 
   ProfileData({this.name, this.bio, this.imagePath}) {
-    this.imageFile = new File(this.imagePath);
+    if (this.imagePath != null)
+      this.imageFile = new File(this.imagePath);
   }
 
   String getName() {
