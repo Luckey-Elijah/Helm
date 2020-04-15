@@ -8,7 +8,8 @@ class Journal {
   /// Persistance kept by [jsonStore] object
   List<Entry> entryList;
 
-  Journal({this.entryList}) {
+  Journal() {
+    this.entryList = new List<Entry>();
     _loadEntries();
   }
 
@@ -37,8 +38,16 @@ class Journal {
     // delete from storage
     await jsonStore.deleteItem(entryKey);
 
+    print('deleting: $entry');
+
     // Delete from object list
     entryList.remove(entry);
+  }
+
+  /// Remove an [Entry] at a specified index.
+  /// A wrapper for the [removeEntry] method.
+  removeEntryAt(int index) {
+    removeEntry(entryList[index]);
   }
 
   /// Accesses [entryList] to return a Stream of the [Entry] elements.
