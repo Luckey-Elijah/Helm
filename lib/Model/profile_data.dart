@@ -8,8 +8,13 @@ class ProfileData {
   String imagePath;
   File imageFile;
 
+
+  final String keyPrefix = 'profile-';
+
   ProfileData({this.name, this.bio, this.imagePath}) {
-    this.imageFile = new File(this.imagePath);
+    if (this.imagePath != null)
+      this.imageFile = new File(this.imagePath);
+
   }
 
   String getName() {
@@ -31,7 +36,12 @@ class ProfileData {
   // Brings up system screen for the phone's gallery
   Future selectGalleryImage() async {
     var image = await ImagePicker.pickImage(source: ImageSource.gallery);
-    if (image != null) {
+
+    if(image != null)
+    {
+      print('image: $image');
+      print('imagePath: ' + image.path);
+
       this.imageFile = image;
       this.imagePath = image.path;
     }
@@ -40,9 +50,28 @@ class ProfileData {
   // Brings up system screen for the phone's camera
   Future selectCameraImage() async {
     var image = await ImagePicker.pickImage(source: ImageSource.camera);
-    if (image != null) {
+
+    if(image != null)
+    {
+      print('image: $image');
+      print('imagePath: ' + image.path);
+
       this.imageFile = image;
       this.imagePath = image.path;
     }
   }
+
+
+  ProfileData.fromJson(Map<String, dynamic> json)
+      : this.name = json['name'],
+        this.bio = json['bio'],
+        this.imagePath = json['imagePath'];
+  
+  Map<String, dynamic> toJson() => {
+        'name': name,
+        'bio': bio,
+        'imagePath': imagePath,
+      };
+
 }
+
