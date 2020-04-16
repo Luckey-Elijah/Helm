@@ -21,7 +21,7 @@ class DeleteJournalButton extends StatelessWidget {
         child: Text(buttonText),
         onPressed: () {
           if(index >= 0)
-            helmJournal.entryList.removeAt(index);
+            helmJournal.removeEntryAt(index);
           //  helmJournal.removeEntry(helmJournal.entryList);
 
           Navigator.pop(context);
