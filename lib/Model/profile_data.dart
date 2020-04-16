@@ -33,6 +33,21 @@ class ProfileData {
     this.bio = bio;
   }
 
+  setImage(imagePath)
+  {
+    this.imagePath = imagePath;
+  }
+
+  getImage()
+  {
+    return imagePath;
+  }
+
+  setFile(image)
+  {
+    imageFile = image;
+  }
+
   // Brings up system screen for the phone's gallery
   Future selectGalleryImage() async {
     var image = await ImagePicker.pickImage(source: ImageSource.gallery);
