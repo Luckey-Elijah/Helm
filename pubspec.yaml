@@ -26,7 +26,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   json_store:
-  image_picker:
+
   test:
 
   rflutter_alert: ^1.0.2
@@ -38,6 +38,8 @@ dependencies:
 
   #This adds the Url Launcher to open up websites in the application.
   url_launcher: ^5.2.5
+
+  shared_preferences: ^0.5.6
 
 dev_dependencies:
   flutter_test:
@@ -52,6 +54,7 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:
