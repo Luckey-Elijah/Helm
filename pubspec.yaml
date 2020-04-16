@@ -26,7 +26,6 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   json_store:
-  image_picker:
   test:
 
   rflutter_alert: ^1.0.2
@@ -95,6 +94,7 @@ flutter:
     - Assets/OnboardingGoalsBackground.jpg
     - Assets/ResourcesScreen.jpg
     - Assets/OnBoardingScreens.jpg
+    - Assets/init_mission_data.json
 
   fonts:
     - family: Gotham-Book

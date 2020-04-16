@@ -5,6 +5,7 @@ import 'CampView.dart';
 import 'MissionView.dart';
 import 'TaskView.dart';
 import 'ProfileView.dart';
+import '../Model/initial_missions.dart';
 
 void main() {
 
@@ -41,5 +42,5 @@ void main() {
       title: "Helm",
       home: Scaffold(body: PageView(children: <Widget>[loginView]))));
 
-
+  loadMissions();
 }

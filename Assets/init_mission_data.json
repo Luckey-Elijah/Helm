@@ -1,0 +1,244 @@
+{
+    "missionList": [
+      {
+        "m_name": "Getting Started",
+        "goals": [
+          {
+            "g_name": "Pick an item to clean",
+            "g_description": "Pick any item that you wish to clean.",
+            "g_category": "productivity"
+          },
+          {
+            "g_name": "One gratefully thought",
+            "g_description": "Take a few minutes and think about some things that you are grateful for. Try to think of one thing.",
+            "g_category": "mentality"
+          },
+          {
+            "g_name": "Have one heathy snack",
+            "g_description": "Pick a fruit, vegetable, low-carb, or low-fat snack to eat.",
+            "g_category": "physical health"
+          }
+        ],
+        "m_description": "This is your first mission! After completing each goal, press the completed button for the goal. Once you have completed all of these goals, this mission will be completed! This mission is for mentality, productivity, and physical health."
+      },
+      {
+        "m_name": "Ketogenic diet",
+        "goals": [
+          {
+            "g_name": "Have an avacado with eggs",
+            "g_description": "After you awake from your sleep, make a small breakfast with an avacado and some eggs.",
+            "g_category": "physical health"
+          },
+          {
+            "g_name": "Have a steak or fish for dinner",
+            "g_description": "For dinner one night, grill or bake some steak or fish with a small size of broccoli.",
+            "g_category": "physical health"
+          },
+          {
+            "g_name": "Snack on some nuts & seeds",
+            "g_description": "In a back, mix some nuts and/or seeds to have for a snack later.",
+            "g_category": "physical health"
+          },
+          {
+            "g_name": "Go the day without sugary foods",
+            "g_description": "For the whole day, do not have any type of food that contains sugar. Only consume a small amount of natural occurring sugars.",
+            "g_category": "physical health"
+          }
+        ],
+        "m_description": "This mission is to prepare you for the famous kiet diet. By eating a high-fat and low-carb meals, your body will enter into ketosis. Consult your doctor before starting this diet."
+      },
+      {
+        "m_name": "Improve your cardio",
+        "goals": [
+          {
+            "g_name": "Go for a 10 minute walk",
+            "g_description": "Walk outside, around your house, or on a treadmill for 10 minutes.",
+            "g_category": "physical health"
+          },
+          {
+            "g_name": "Do step-ups for two minutes",
+            "g_description": "Get a small platform that you can step on. For two minutes straight. Step up and down continously for the whole time.",
+            "g_category": "physical health"
+          },
+          {
+            "g_name": "Stretch for 3 minutes",
+            "g_description": "Stretch out your muscles to help with your muscle flexibility.",
+            "g_category": "physical health"
+          },
+          {
+            "g_name": "Wall sit for as long as you can",
+            "g_description": "Lay perpendicular to the wall with legs going vertical towards the sky.",
+            "g_category": "physical health"
+          },
+          {
+            "g_name": "Swim for half an hour",
+            "g_description": "Find a place to swim for half an hour. Enjoy the water while you swim.",
+            "g_category": "physical health"
+          }
+        ],
+        "m_description": "This mission is all about your physical health. Excerise to release endorphins into your brain to make you feel better."
+      },
+      {
+        "m_name": "Increase attention span",
+        "goals": [
+          {
+            "g_name": "Drink a glass of water",
+            "g_description": "Get a water glass, fill it with water, and drink the water. Don't drink to fast! May cause belly ache.",
+            "g_category": "mentality"
+          },
+          {
+            "g_name": "Listen to some music",
+            "g_description": "Pick your favorite music and sit and relax while listening to your music.",
+            "g_category": "mentality"
+          },
+          {
+            "g_name": "Drink some tea",
+            "g_description": "Get some herbal tea to drink. Herbal teas have many benefits to them. Pick the one you like the best.",
+            "g_category": "mentality"
+          },
+          {
+            "g_name": "Take notes by hand",
+            "g_description": "While your listening to somebody or something, you should get a notepad and pencil to take some notes on what they are saying.",
+            "g_category": "mentality"
+          }
+        ],
+        "m_description": "To better your mental attention span, use these goals. With a higher attention span, you'll be able to focus on important things."
+      },
+      {
+        "m_name": "Organization is Key",
+        "goals": [
+          {
+            "g_name": "Make your bed",
+            "g_description": "After you wake up in the morning, make your bed so it looks nice and clean.",
+            "g_category": "productivity"
+          },
+          {
+            "g_name": "Organize phone",
+            "g_description": "When you have time, remove or organize apps on your phone.",
+            "g_category": "productivity"
+          },
+          {
+            "g_name": "One daily goal",
+            "g_description": "Develop a goal for the day that you can accomplish.",
+            "g_category": "productivity"
+          }
+        ],
+        "m_description": "Having organization can help you be productive throughout the day. Complete this mission to become better at organization."
+      },
+      {
+        "m_name": "Be Prepared",
+        "goals": [
+          {
+            "g_name": "15 minute rule",
+            "g_description": "Arrive 15 minutes early to anything.",
+            "g_category": "productivity"
+          },
+          {
+            "g_name": "30 minutes before",
+            "g_description": "Set your morning alarm 30 minutes before you need to wake up.",
+            "g_category": "productivity"
+          },
+          {
+            "g_name": "Prepare the night before",
+            "g_description": "Whether or not you have to leave in the morning, you should prepare the next day before you go to bed. Maybe prepare your lunch or pick out your cloths.",
+            "g_category": "productivity"
+          },
+          {
+            "g_name": "Get around 8 hours of sleep.",
+            "g_description": "Science has provided that getting enough sleep is important your your mind and body. Sleep for about 8 hours.",
+            "g_category": "physical health"
+          }
+        ],
+        "m_description": "Preparing for things in life will help with your productivity and your physical health."
+      },
+      {
+        "m_name": "Cleaning House",
+        "goals": [
+          {
+            "g_name": "Pick up time",
+            "g_description": "Pick up items around your house that are in the wrong spots.",
+            "g_category": "productivity"
+          },
+          {
+            "g_name": "Floor treatment",
+            "g_description": "Vacuum and/or sweep your floor.",
+            "g_category": "physical health"
+          },
+          {
+            "g_name": "Take out the trash",
+            "g_description": "Taking out the trash can help with productivity by having a clean house.",
+            "g_category": "productivity"
+          }
+        ],
+        "m_description": "Cleaning the house is a very important task. I will help with productivity and help you be fit by walking and lifting items."
+      },
+      {
+        "m_name": "Connections",
+        "goals": [
+          {
+            "g_name": "Call a friend or family member",
+            "g_description": "Communicate with a friend or family member. Somebody will be surely glad to hear from you.",
+            "g_category": "mentality"
+          },
+          {
+            "g_name": "Introduce yourself to a friend's friend",
+            "g_description": "By introducing yourself to a friend's friend, you'll open up new connections that you never had. Maybe you have something in common. Maybe you both use Helm!",
+            "g_category": "mentality"
+          },
+          {
+            "g_name": "Create a LinkedIn account",
+            "g_description": "By creating a LinkedIn account, you'll be able to reach out to people you knew or make new connections to get a job.",
+            "g_category": "mentality"
+          }
+        ],
+        "m_description": "Opening new doors with new people can help with you mentality on life. Talking is a natural relief."
+      },
+      {
+        "m_name": "Generosity",
+        "goals": [
+          {
+            "g_name": "Hold that door",
+            "g_description": "While you're out somewhere, be kind and hold that door open for somebody.",
+            "g_category": "mentality"
+          },
+          {
+            "g_name": "Grocery cart",
+            "g_description": "Offer to carry groceries for somebody at the grocery store.",
+            "g_category": "mentality"
+          },
+          {
+            "g_name": "Lookin good",
+            "g_description": "Tell a friend or family member they look nice.",
+            "g_category": "mentality"
+          },
+          {
+            "g_name": "Gift you dont want",
+            "g_description": "Re-gift or donate an item that you do not need.",
+            "g_category": "mentality"
+          }
+        ],
+        "m_description": "Generosity can help you feel better about yourself. Help somebody else to help you feel better."
+      },
+      {
+        "m_name": "A bright future",
+        "goals": [
+          {
+            "g_name": "Goal Week",
+            "g_description": "Create one goal to accomplish in one week from now.",
+            "g_category": "productivity"
+          },
+          {
+            "g_name": "Goal Month",
+            "g_description": "Create one goal to accomplish in one month from now.",
+            "g_category": "productivity"
+          },
+          {
+            "g_name": "Goal Year",
+            "g_description": "Create one goal to accomplish in one year from now.",
+            "g_category": "productivity"
+          }
+        ],
+        "m_description": "Create goals that are realistically achievable to complete this mission. Having goals can help you be more productive with your overall time."
+      }
+    ]
+  }
