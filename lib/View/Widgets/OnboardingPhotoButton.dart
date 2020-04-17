@@ -71,7 +71,9 @@ class OnboardingPhotoButton extends StatelessWidget
     pData.setFile(file);
 
     // Put datastructure method here or else program will not wait for photoPath to update to found photo path
-    print("front screen:  " + pData.getImage());
+
+
+    prefs.remove("PhotoPath");
   }
 
 }

@@ -7,8 +7,8 @@ import '../../Model/entry.dart';
 class JournalButton extends StatelessWidget {
   Widget screen;
   String buttonLabel;
-  TextEditingController journalTitle;
-  TextEditingController journalBody;
+  String journalTitle;
+  String journalBody;
   String journalEntry;
 
   Journal journal = Journal();
@@ -35,13 +35,13 @@ class JournalButton extends StatelessWidget {
           color: Colors.orange,
 
           onPressed: () {
-             print(journalTitle.text);
-              print(journalBody.text);
+             print(journalTitle);
+              print(journalBody);
 
             journal.addEntry(
               Entry(
-                body: journalBody.text,
-                title: journalTitle.text,
+                body: journalBody,
+                title: journalTitle,
                 dateTime: DateTime.now(),
               ),
             );

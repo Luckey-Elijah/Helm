@@ -18,25 +18,9 @@ class _MyCustomFormState extends State<JournalEntryView> {
   // Create a text controller and use it to retrieve the current value
   // of the TextField.
 
-  final titleController = TextEditingController();
-  final journalController = TextEditingController();
+  String title, body;
 
 
-
-
-  @override
-  void dispose() {
-    // Clean up the controller when the widget is disposed.
-    titleController.dispose();
-    journalController.dispose();
-    super.dispose();
-  }
-
-  void check()
-  {
-    if(titleController != null);
-    dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -57,8 +41,8 @@ class _MyCustomFormState extends State<JournalEntryView> {
                 color: Colors.white,))
           ),
           Align(alignment: Alignment(0,-.5),
-              child: TextField(
-                controller: titleController,
+              child: TextFormField(
+                onChanged: (String text)=>setState((){title=text;}),
                 decoration: InputDecoration(border: OutlineInputBorder()),
               )),
           Align(alignment: Alignment(-.9,-.15),
@@ -67,8 +51,8 @@ class _MyCustomFormState extends State<JournalEntryView> {
                 color: Colors.white,))),
           Align(
               alignment: Alignment(0, .15),
-              child: TextField(
-                  controller: journalController,
+              child: TextFormField(
+                  onChanged: (String text)=>setState((){body=text;}),
                   minLines: 2,
                   maxLines: 10,
                   decoration: InputDecoration(border: OutlineInputBorder()))),
@@ -77,8 +61,8 @@ class _MyCustomFormState extends State<JournalEntryView> {
 
               alignment: Alignment(.4, .7),
               child: JournalButton(
-                journalTitle: titleController,
-                journalBody: journalController,
+                journalTitle: title,
+                journalBody: body,
                 buttonLabel: "Continue",
                 screen: Helm(),
 

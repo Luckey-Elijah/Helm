@@ -12,11 +12,14 @@ class JournalList extends StatelessWidget
 
   JournalList({this.list});
 
-
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return ListView.builder(
+
+
+    return Scaffold(
+       backgroundColor: Colors.black,
+        body: ListView.builder(
       itemCount: list.length,
       scrollDirection: Axis.vertical,
       shrinkWrap: true,
@@ -24,10 +27,10 @@ class JournalList extends StatelessWidget
 
       itemBuilder: (context,index){
         return ListTile(
-          title: Text(list[index].journalName ),
+          title: Text(list[index].journalName, style: TextStyle(color: Colors.white,),),
           onTap:(){
-          //  print("tap");
-            Navigator.push(context, MaterialPageRoute(builder: (context)=> JournalView(name: list[index].journalName, content: list[index].journalEntry, date: list[index].journalDate.toString(),index: index,)));
+           // print("Index:" + list.length.toString());
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> JournalView(name: list[index].journalName, content: list[index].journalEntry, date: list[index].journalDate.toString().split(" ")[0],index: index,)));
 
 
           } ,
@@ -35,8 +38,11 @@ class JournalList extends StatelessWidget
         );
       },
 
-    );
+    ));
   }
+
+
+
 
 
 
