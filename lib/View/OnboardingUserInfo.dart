@@ -75,9 +75,18 @@ class OnboardingUserState extends State<OnboardingUserInfo>
     return Scaffold(
       body: Stack(
         children: <Widget>[
+          Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('Assets/OnboardingGoalsBackground.jpg'),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+
 
           Align(alignment: Alignment(-.7,-.6),
-            child: Text("Profile Picture"),),
+            child: Text("Profile Picture", style: TextStyle(color: Colors.white,),),),
           Align(alignment: Alignment(-.8,-.5),
               child: PhotoButton(bSwitch: 0)),
 
@@ -85,11 +94,11 @@ class OnboardingUserState extends State<OnboardingUserInfo>
               child: PhotoButton(bSwitch: 1)),
 
           Align(alignment: Alignment(-.7,.15),
-            child: Text("Bio"),),
+            child: Text("Bio", style: TextStyle(color: Colors.white,),),),
           Align(alignment: Alignment(0,.3),
               child: TextFormField(
                 onFieldSubmitted: (String text)=>setState((){bio = text;}),
-                decoration: InputDecoration(border: OutlineInputBorder()),
+                decoration:InputDecoration(enabledBorder: OutlineInputBorder(borderSide: const BorderSide(color: Colors.white))),
               )),
 
           Align(

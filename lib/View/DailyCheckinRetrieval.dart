@@ -11,15 +11,7 @@ import 'package:senior_design/ViewModel/JournalViewModel.dart';
 class DailyCheckinRetrieval extends StatelessWidget
 {
   Journal helmJournal = new Journal();
-
-  //JournalEntry entry = JournalEntry("textetxr","10/10/2020","journalName");
-
-
-
-
-
-
-
+  var entries = new List<JournalEntry>();
 
   @override
   Widget build(BuildContext context) {
@@ -29,26 +21,19 @@ class DailyCheckinRetrieval extends StatelessWidget
     var entryList = new List<Entry>();
 
      entryList = helmJournal.entryList;
-
-    print("List length " +entryList.length.toString());
-
+     listCheck(entries);
 
 
 
-
-    var entries = new List<JournalEntry>();
-
-    for(int i=0; i < entryList.length; i++)
+    for(int i=0; i < entryList.length; i++) {
       entry = entryList[i];
-      JournalEntry je = new JournalEntry(entry.body, entry.dateTime, entry.title);
+      JournalEntry je = new JournalEntry(
+          entry.body, entry.dateTime, entry.title);
 
-      if(je.journalName != "" || je.journalName != null)
-        print("entry added");
-        entries.add(je);
-
-
-
-
+      // if(je.journalName != "" || je.journalName != null)
+      //   print("entry added");
+      entries.add(je);
+    }
 
    print(entries.length.toString());
 
@@ -60,6 +45,27 @@ class DailyCheckinRetrieval extends StatelessWidget
       ),
 
     );
+  }
+
+
+  int listCheck(List<JournalEntry> e)
+  {
+    int actualLength=0;
+    for(int i=0; i < e.length;i++)
+    {
+      if(e[i].journalName != null)
+      {
+        actualLength++;
+      }
+      print(e[i].journalName);
+
+      if(i == 10)
+      {
+        print("Name" + e[i].journalName);
+      }
+    }
+    print("actualLength:" + actualLength.toString());
+    return actualLength;
   }
 
 }
