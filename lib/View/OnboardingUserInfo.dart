@@ -97,6 +97,7 @@ class OnboardingUserState extends State<OnboardingUserInfo>
             child: Text("Bio", style: TextStyle(color: Colors.white,),),),
           Align(alignment: Alignment(0,.3),
               child: TextFormField(
+                style: TextStyle(color: Colors.white,),
                 onFieldSubmitted: (String text)=>setState((){bio = text;}),
                 decoration:InputDecoration(enabledBorder: OutlineInputBorder(borderSide: const BorderSide(color: Colors.white))),
               )),
