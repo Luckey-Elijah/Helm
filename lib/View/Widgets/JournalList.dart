@@ -1,17 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:senior_design/Model/JournalEntry.dart';
+// import 'package:senior_design/Model/JournalEntry.dart';
 import 'package:senior_design/View/JournalView.dart';
+import '../../Model/entry.dart';
 
 import '../Helm.dart';
 
-class JournalList extends StatelessWidget
-{
-
-  List<JournalEntry> list;
+class JournalList extends StatelessWidget {
+  List<Entry> list;
 
   JournalList({this.list});
-
 
   @override
   Widget build(BuildContext context) {
@@ -21,24 +19,25 @@ class JournalList extends StatelessWidget
       scrollDirection: Axis.vertical,
       shrinkWrap: true,
       physics: const AlwaysScrollableScrollPhysics(),
-
-      itemBuilder: (context,index){
+      itemBuilder: (context, index) {
         return ListTile(
-          title: Text(list[index].journalName ),
-          onTap:(){
-          //  print("tap");
-            Navigator.push(context, MaterialPageRoute(builder: (context)=> JournalView(name: list[index].journalName, content: list[index].journalEntry, date: list[index].journalDate.toString(),index: index,)));
-
-
-          } ,
-
+          title: Text(list[index].title),
+          onTap: () {
+            //  print("tap");
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => JournalView(
+                  name: list[index].title,
+                  content: list[index].body,
+                  date: list[index].dateTime.toString(),
+                  index: index,
+                ),
+              ),
+            );
+          },
         );
       },
-
     );
   }
-
-
-
-
 }
