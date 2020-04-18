@@ -31,6 +31,7 @@ class PhotoButton extends StatefulWidget
 
            child: IconButton(
              icon: Icon(Icons.photo_camera),
+             color: Colors.white,
              onPressed: () {
                getCamera();
              },
@@ -44,6 +45,7 @@ class PhotoButton extends StatefulWidget
            child: IconButton(
 
              icon: Icon(Icons.photo_library),
+             color: Colors.white,
              onPressed: () {
                getLibrary();
              },

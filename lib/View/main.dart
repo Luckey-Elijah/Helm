@@ -42,5 +42,5 @@ void main() {
       title: "Helm",
       home: Scaffold(body: PageView(children: <Widget>[loginView]))));
 
-  loadMissions();
+ ;
 }

@@ -1,6 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:senior_design/Model/journal.dart';
+import 'package:senior_design/View/CampView.dart';
+import 'package:senior_design/View/Helm.dart';
+
+import '../ProfileView.dart';
 
 class DeleteJournalButton extends StatelessWidget {
   String buttonText;
@@ -18,14 +22,26 @@ class DeleteJournalButton extends StatelessWidget {
       height: 60,
       width: 100,
       child: RaisedButton(
-        child: Text(buttonText),
+        color: Colors.orange,
+        child: Text(buttonText, style: TextStyle(
+            color: Colors.white,
+            fontSize: 15,
+            )) ,
         onPressed: () {
-          if(index >= 0)
+          if(index >= 0) {
             helmJournal.removeEntryAt(index);
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Helm())
+            );
+          }
           //  helmJournal.removeEntry(helmJournal.entryList);
-
-          Navigator.pop(context);
-
+          else {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Helm())
+            );
+          }
         },
       ),
     );
