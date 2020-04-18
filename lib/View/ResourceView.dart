@@ -28,9 +28,6 @@ class ResourceView extends StatelessWidget {
                 ),
               ),
             ),
-            Center(
-              child: Text("Resource Page",  style: TextStyle(color: Colors.white, fontSize: 16, fontFamily: 'GothamNarrow-Book')),
-          ),
 
            Align(
 
