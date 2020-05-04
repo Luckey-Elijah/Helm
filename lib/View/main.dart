@@ -8,13 +8,12 @@ import 'ProfileView.dart';
 import '../Model/initial_missions.dart';
 
 void main() {
-
   Widget campPage = CampView();
   Widget missionPage = MissionView();
   Widget profileView = ProfileView();
   Widget resourceView = ResourceView();
   Widget taskView = TaskView();
- // Widget loginView = LoginView();
+  // Widget loginView = LoginView();
 
   /*
   runApp(MaterialApp(
@@ -34,13 +33,11 @@ void main() {
 
       */
 
-
-
   LoginView loginView = new LoginView();
 
   runApp(MaterialApp(
       title: "Helm",
       home: Scaffold(body: PageView(children: <Widget>[loginView]))));
 
- ;
+  ;
 }

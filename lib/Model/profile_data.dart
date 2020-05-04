@@ -8,13 +8,10 @@ class ProfileData {
   String imagePath;
   File imageFile;
 
-
   final String keyPrefix = 'profile-';
 
   ProfileData({this.name, this.bio, this.imagePath}) {
-    if (this.imagePath != null)
-      this.imageFile = new File(this.imagePath);
-
+    if (this.imagePath != null) this.imageFile = new File(this.imagePath);
   }
 
   String getName() {
@@ -33,18 +30,15 @@ class ProfileData {
     this.bio = bio;
   }
 
-  setImage(imagePath)
-  {
+  setImage(imagePath) {
     this.imagePath = imagePath;
   }
 
-  getImage()
-  {
+  getImage() {
     return imagePath;
   }
 
-  setFile(image)
-  {
+  setFile(image) {
     imageFile = image;
   }
 
@@ -52,8 +46,7 @@ class ProfileData {
   Future selectGalleryImage() async {
     var image = await ImagePicker.pickImage(source: ImageSource.gallery);
 
-    if(image != null)
-    {
+    if (image != null) {
       print('image: $image');
       print('imagePath: ' + image.path);
 
@@ -66,8 +59,7 @@ class ProfileData {
   Future selectCameraImage() async {
     var image = await ImagePicker.pickImage(source: ImageSource.camera);
 
-    if(image != null)
-    {
+    if (image != null) {
       print('image: $image');
       print('imagePath: ' + image.path);
 
@@ -76,17 +68,14 @@ class ProfileData {
     }
   }
 
-
   ProfileData.fromJson(Map<String, dynamic> json)
       : this.name = json['name'],
         this.bio = json['bio'],
         this.imagePath = json['imagePath'];
-  
+
   Map<String, dynamic> toJson() => {
         'name': name,
         'bio': bio,
         'imagePath': imagePath,
       };
-
 }
-

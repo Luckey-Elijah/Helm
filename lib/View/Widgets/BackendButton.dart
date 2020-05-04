@@ -8,7 +8,8 @@ class BackendButton extends StatelessWidget {
 
   BackendButton(
       {this.buttonText,
-      this.function,this.screen}); // This allows you to pass parameters from view to button
+      this.function,
+      this.screen}); // This allows you to pass parameters from view to button
   @override
   Widget build(BuildContext context) {
     // TODO: implement build

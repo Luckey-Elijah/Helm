@@ -9,7 +9,6 @@ has the code to change the data of LoginButton or another button
  */
 
 class TempButton extends StatelessWidget {
-
   final Widget pageToShow;
   double importGM,
       importAnxiety,
@@ -32,7 +31,6 @@ class TempButton extends StatelessWidget {
   Widget build(BuildContext context) {
     // Helm looks up all the other views
     //Helm helm = new Helm();
-
 
     JournalEntryView journal = JournalEntryView();
     // TODO: implement build

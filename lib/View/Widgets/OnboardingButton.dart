@@ -1,13 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class OnboardingButton extends StatelessWidget
-{
-
+class OnboardingButton extends StatelessWidget {
   String buttonLabel;
   Widget screen;
 
-  OnboardingButton({this.buttonLabel,this.screen});
+  OnboardingButton({this.buttonLabel, this.screen});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +14,7 @@ class OnboardingButton extends StatelessWidget
       width: 200,
       height: 60,
       child: RaisedButton(
-        //alignment: Alignment(100.0, 100.0),
+          //alignment: Alignment(100.0, 100.0),
 
           child: Text(buttonLabel,
               textAlign: TextAlign.center,
@@ -36,5 +34,4 @@ class OnboardingButton extends StatelessWidget
           }),
     );
   }
-
 }

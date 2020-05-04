@@ -10,10 +10,9 @@ class ProfileView extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      //backgroundColor: Colors.purple,
+        //backgroundColor: Colors.purple,
         body: Stack(
       children: <Widget>[
-
         Container(
           decoration: BoxDecoration(
             image: DecorationImage(
@@ -22,38 +21,21 @@ class ProfileView extends StatelessWidget {
             ),
           ),
         ),
-
         Align(
-          alignment: Alignment(-.85,-.8),
-
-          child: Text("Physical Health",style: TextStyle(color: Colors.white))),
-
-
+            alignment: Alignment(-.85, -.8),
+            child:
+                Text("Physical Health", style: TextStyle(color: Colors.white))),
+        Align(alignment: Alignment(-.4, -.7), child: StatGraph()),
         Align(
-            alignment: Alignment(-.4,-.7),
-            child: StatGraph()
+          alignment: Alignment(-.85, -.2),
+          child: Text("Productivity", style: TextStyle(color: Colors.white)),
         ),
-
-
+        Align(alignment: Alignment(-.4, .05), child: StatGraph()),
         Align(
-          alignment: Alignment(-.85,-.2),
-          child: Text("Productivity",style: TextStyle(color: Colors.white)),
+          alignment: Alignment(-.85, .4),
+          child: Text("Mentality", style: TextStyle(color: Colors.white)),
         ),
-
-        Align(
-            alignment: Alignment(-.4,.05),
-            child: StatGraph()
-        ),
-
-        Align(
-          alignment: Alignment(-.85,.4),
-          child: Text("Mentality",style: TextStyle(color: Colors.white)),
-        ),
-        Align(
-            alignment: Alignment(-.4,.8),
-            child: StatGraph()
-        ),
-
+        Align(alignment: Alignment(-.4, .8), child: StatGraph()),
       ],
     ));
   }

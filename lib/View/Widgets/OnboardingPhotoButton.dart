@@ -8,9 +8,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../OnboardingGoals.dart';
 
-class OnboardingPhotoButton extends StatelessWidget
-{
-
+class OnboardingPhotoButton extends StatelessWidget {
   String buttonLabel;
   Widget screen;
   String photoPath;
@@ -18,7 +16,7 @@ class OnboardingPhotoButton extends StatelessWidget
   String bio;
   var file;
 
-  OnboardingPhotoButton({this.buttonLabel,this.screen,this.bio,this.name});
+  OnboardingPhotoButton({this.buttonLabel, this.screen, this.bio, this.name});
   ProfileData pData = new ProfileData();
   @override
   Widget build(BuildContext context) {
@@ -27,7 +25,7 @@ class OnboardingPhotoButton extends StatelessWidget
       width: 200,
       height: 60,
       child: RaisedButton(
-        //alignment: Alignment(100.0, 100.0),
+          //alignment: Alignment(100.0, 100.0),
 
           child: Text(buttonLabel,
               textAlign: TextAlign.center,
@@ -36,15 +34,12 @@ class OnboardingPhotoButton extends StatelessWidget
           onPressed: () {
             getPaths();
 
-
-
             pData.setBio(bio);
             pData.setName(name);
 
-
-          //  print(bio);
-          //  print(name);
-          //  print(photoPath);
+            //  print(bio);
+            //  print(name);
+            //  print(photoPath);
 
             Navigator.push(
               context,
@@ -60,8 +55,7 @@ class OnboardingPhotoButton extends StatelessWidget
     );
   }
 
-
-  Future getPaths() async{
+  Future getPaths() async {
     final prefs = await SharedPreferences.getInstance();
     photoPath = prefs.getString("PhotoPath");
     pData.setImage(photoPath);
@@ -72,8 +66,6 @@ class OnboardingPhotoButton extends StatelessWidget
 
     // Put datastructure method here or else program will not wait for photoPath to update to found photo path
 
-
     prefs.remove("PhotoPath");
   }
-
 }

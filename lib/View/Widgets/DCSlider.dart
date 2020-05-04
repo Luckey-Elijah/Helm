@@ -17,7 +17,7 @@ class DCSlider extends StatefulWidget {
   _DCSLIDERS createState() => new _DCSLIDERS();
 }
 
-class _DCSLIDERS extends State{
+class _DCSLIDERS extends State {
   DCSlider mySlider = new DCSlider();
 
   @override
@@ -26,10 +26,10 @@ class _DCSLIDERS extends State{
       alignment: Alignment.center,
       children: <Widget>[
         Align(
-          alignment: Alignment(-.993,0),
-          child: Text("👍", textAlign: TextAlign.left, style: TextStyle(color: Colors.white)),
+          alignment: Alignment(-.993, 0),
+          child: Text("👍",
+              textAlign: TextAlign.left, style: TextStyle(color: Colors.white)),
         ),
-
         Slider(
           value: mySlider.sliderValue,
           inactiveColor: Colors.black,
@@ -39,10 +39,11 @@ class _DCSLIDERS extends State{
           divisions: 2,
           onChanged: sliderStatus,
         ),
-      Align(
-          alignment: Alignment(.993,0),
-          child: Text("👎", textAlign: TextAlign.right, style: TextStyle(color: Colors.white))
-        ),
+        Align(
+            alignment: Alignment(.993, 0),
+            child: Text("👎",
+                textAlign: TextAlign.right,
+                style: TextStyle(color: Colors.white))),
       ],
     );
   }

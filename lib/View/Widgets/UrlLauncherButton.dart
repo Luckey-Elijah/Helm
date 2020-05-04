@@ -9,36 +9,34 @@ The url Temp will be passed from the Resource for the button to be formed to dir
  */
 
 class UrlLauncherButton extends StatelessWidget {
+  String title, urlTemp;
 
-   String title, urlTemp;
-
-   UrlLauncherButton({this.title, this.urlTemp});
+  UrlLauncherButton({this.title, this.urlTemp});
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return SizedBox(
-      width: 120,
-      height: 50,
-      child: FlatButton(
+        width: 120,
+        height: 50,
+        child: FlatButton(
           //"Sleep Aid"
-          child: Text(title, style: TextStyle(color: Colors.white, fontSize: 16, fontFamily: 'Gotham-Light')),
+          child: Text(title,
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 16,
+                  fontFamily: 'Gotham-Light')),
           color: Colors.orange,
           onPressed: launchUrl,
-
-
-      )
-    );
-
+        ));
   }
 
-   launchUrl() async{
-     String url = urlTemp;
-     if (await canLaunch(url)) {
-       await launch(url);
-     } else {
-       throw 'Could not launch $url';
-     }
-
-   }
+  launchUrl() async {
+    String url = urlTemp;
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }

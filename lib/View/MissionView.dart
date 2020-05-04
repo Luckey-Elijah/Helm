@@ -27,21 +27,19 @@ class MissionView extends StatelessWidget {
           ),
         ),
         Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-          Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                GlowyButton(buttonText: "Mind",pageToShow: listViewMind),
-                GlowyButton(buttonText: "Body",pageToShow: listViewBody),
-                GlowyButton(buttonText: "Life",pageToShow: listViewLife),
-                GlowyButton(buttonText: "Soul",pageToShow: listViewSoul)
-              ]
-          )
-        ]
-        )
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    GlowyButton(buttonText: "Mind", pageToShow: listViewMind),
+                    GlowyButton(buttonText: "Body", pageToShow: listViewBody),
+                    GlowyButton(buttonText: "Life", pageToShow: listViewLife),
+                    GlowyButton(buttonText: "Soul", pageToShow: listViewSoul)
+                  ])
+            ])
       ],
     ));
   }

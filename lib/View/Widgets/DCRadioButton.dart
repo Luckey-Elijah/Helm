@@ -11,29 +11,25 @@ Unused code
 
  */
 
-class DCRadioButton extends StatelessWidget
-{
+class DCRadioButton extends StatelessWidget {
   int groupThumbs;
 
   @override
-  Widget build(BuildContext context)
-  {
+  Widget build(BuildContext context) {
     return new Scaffold(
       body: new Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-
-          new Radio(value: 0,
-              groupValue: null,
-              onChanged: null),
-
-          new Text('👍', style: new TextStyle(fontSize: 16.0),),
-
-          new Radio(value: 1,
-              groupValue: null,
-              onChanged: null
+          new Radio(value: 0, groupValue: null, onChanged: null),
+          new Text(
+            '👍',
+            style: new TextStyle(fontSize: 16.0),
           ),
-          new Text('👎', style: new TextStyle(fontSize: 16.0),),
+          new Radio(value: 1, groupValue: null, onChanged: null),
+          new Text(
+            '👎',
+            style: new TextStyle(fontSize: 16.0),
+          ),
         ],
       ),
     );

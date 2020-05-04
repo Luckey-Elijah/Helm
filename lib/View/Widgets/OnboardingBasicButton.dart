@@ -3,14 +3,12 @@ import 'package:flutter/material.dart';
 
 import '../OnboardingUserInfo.dart';
 
-class OnboardingBasicButton extends StatelessWidget
-{
-
+class OnboardingBasicButton extends StatelessWidget {
   String buttonLabel;
   Widget screen;
-  String  name;
+  String name;
 
-  OnboardingBasicButton({this.buttonLabel,this.screen,this.name});
+  OnboardingBasicButton({this.buttonLabel, this.screen, this.name});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +17,7 @@ class OnboardingBasicButton extends StatelessWidget
       width: 200,
       height: 60,
       child: RaisedButton(
-        //alignment: Alignment(100.0, 100.0),
+          //alignment: Alignment(100.0, 100.0),
 
           child: Text(buttonLabel,
               textAlign: TextAlign.center,
@@ -28,7 +26,8 @@ class OnboardingBasicButton extends StatelessWidget
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => OnboardingUserInfo(name: name)),
+              MaterialPageRoute(
+                  builder: (context) => OnboardingUserInfo(name: name)),
             );
 
             //function goes here for button action
@@ -40,5 +39,4 @@ class OnboardingBasicButton extends StatelessWidget
           }),
     );
   }
-
 }

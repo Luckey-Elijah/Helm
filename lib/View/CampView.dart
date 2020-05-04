@@ -12,7 +12,6 @@ import 'DailyCheckinSlider.dart';
 import 'Widgets/ProfileNameText.dart';
 import 'Widgets/ProfilePicture.dart';
 
-
 class CampView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -30,33 +29,33 @@ class CampView extends StatelessWidget {
             ),
           ),
         ),
-
         Align(
-            alignment: Alignment(0.0,-0.8),
-            child: ProfilePicture(imagePath: 'Assets/Icons/MindIcon.jpg',)
-        ),
-
+            alignment: Alignment(0.0, -0.8),
+            child: ProfilePicture(
+              imagePath: 'Assets/Icons/MindIcon.jpg',
+            )),
         Align(
-            alignment: Alignment(0,-0.2),
-            child:  ProfileNameText(profileName: "Name Here",)
-        ),
-
+            alignment: Alignment(0, -0.2),
+            child: ProfileNameText(
+              profileName: "Name Here",
+            )),
         Align(
-          alignment: Alignment(0,0),
-          child: OnboardingButton(buttonLabel: "Daily Check-In", screen:  DailyCheckin( ),)),
-
+            alignment: Alignment(0, 0),
+            child: OnboardingButton(
+              buttonLabel: "Daily Check-In",
+              screen: DailyCheckin(),
+            )),
         Center(
-         // child: Text("Camp/Home Page"),
+            // child: Text("Camp/Home Page"),
 
-        )
-
-
-        ,
+            ),
         Align(
-          alignment: Alignment(0,.5),
-          child: OnboardingButton(buttonLabel: "Review Check-Ins", screen:  DailyCheckinRetrieval(),),
+          alignment: Alignment(0, .5),
+          child: OnboardingButton(
+            buttonLabel: "Review Check-Ins",
+            screen: DailyCheckinRetrieval(),
+          ),
         )
-
 
         /*
         Align(
@@ -82,7 +81,6 @@ class CampView extends StatelessWidget {
 
 
          */
-
       ],
     ));
   }
