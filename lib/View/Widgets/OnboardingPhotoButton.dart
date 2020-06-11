@@ -9,6 +9,7 @@ import '../OnboardingGoals.dart';
 class OnboardingPhotoButton extends StatelessWidget {
   final String buttonLabel;
   final Widget screen;
+  // TODO: [photoPath] should be [final] and change [getPaths()] appropiately.
   String photoPath = '';
   final String name;
   final String bio;
@@ -49,13 +50,8 @@ class OnboardingPhotoButton extends StatelessWidget {
     final prefs = await SharedPreferences.getInstance();
     photoPath = prefs.getString("PhotoPath");
     pData.setImage(photoPath);
-
     File file = new File(photoPath);
-
     pData.setFile(file);
-
-    // Put datastructure method here or else program will not wait for photoPath to update to found photo path
-
     prefs.remove("PhotoPath");
   }
 }
