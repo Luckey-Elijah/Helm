@@ -27,14 +27,10 @@ dependencies:
   test:
   rflutter_alert:
   charts_flutter:
-
-  #This adds ability to use camera or gallery photos
   image_picker:
-
-  #This adds the Url Launcher to open up websites in the application.
   url_launcher:
-
   shared_preferences:
+  flutter_launcher_icons:
 
 dev_dependencies:
   flutter_test:
