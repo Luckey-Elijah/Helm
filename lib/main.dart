@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'View/Widgets/LoginView.dart';
+import 'View/StartView.dart';
 
 void main() {
   LoginView loginView = new LoginView();
