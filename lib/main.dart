@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'StartView.dart';
+import 'View/Widgets/LoginView.dart';
 
 void main() {
   LoginView loginView = new LoginView();
@@ -8,9 +8,7 @@ void main() {
     MaterialApp(
       title: "Helm",
       home: Scaffold(
-        body: PageView(
-          children: <Widget>[loginView],
-        ),
+        body: PageView(children: <Widget>[loginView]),
       ),
     ),
   );

@@ -1,24 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:senior_design/Model/entry.dart';
-import 'package:senior_design/Model/journal.dart';
-
-import 'package:senior_design/View/DailyCheckinRetrieval.dart';
-
 import 'Widgets/DeleteJournalButton.dart';
 
 class JournalView extends StatelessWidget {
-  String name;
-  String content;
-  String date;
-  int index;
+  final String name;
+  final String content;
+  final String date;
+  final int index;
 
   JournalView({this.name, this.content, this.date, this.index});
-//  var dateTime = new DateFormat("dd/MM/yyyy HH:mm:ss")
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       backgroundColor: Colors.green,
       body: Stack(

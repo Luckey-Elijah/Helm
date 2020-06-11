@@ -1,18 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-/*
-The Radio Button Class for Daily Checkin mark 2.
-The Radio button class will make a row with a button for
-//👍 For thumbs up
-// 👎 for thumbs down
-
-Unused code
-
- */
-
 class DCRadioButton extends StatelessWidget {
-  int groupThumbs;
+  final int groupThumbs = 0;
 
   @override
   Widget build(BuildContext context) {

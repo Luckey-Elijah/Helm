@@ -10,9 +10,7 @@ class OnboardingSliderParams extends State {
   double sliderValue = 50.0;
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Stack(
-      // alignment: Alignment.center,
       children: <Widget>[
         Align(
             alignment: Alignment(0, -1),

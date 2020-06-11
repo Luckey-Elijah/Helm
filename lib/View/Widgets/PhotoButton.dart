@@ -4,7 +4,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PhotoButton extends StatefulWidget {
-  int bSwitch;
+  final int bSwitch;
   PhotoButton({this.bSwitch});
   @override
   PhotoState createState() => PhotoState(bSwitch: bSwitch);
@@ -19,7 +19,6 @@ class PhotoState extends State<PhotoButton> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     if (bSwitch == 1)
       return SizedBox(
         width: 50,

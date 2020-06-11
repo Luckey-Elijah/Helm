@@ -1,5 +1,4 @@
 import 'package:json_store/json_store.dart';
-import 'goal.dart';
 import 'mission.dart';
 
 class MissionManager {

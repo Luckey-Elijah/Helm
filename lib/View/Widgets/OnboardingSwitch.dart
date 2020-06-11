@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingSwitch extends StatefulWidget {
-  String text;
+  final String text;
 
   OnboardingSwitch({this.text});
 
@@ -13,8 +13,6 @@ class OnboardingSwitch extends StatefulWidget {
 class OnboardingSwitchClass extends State {
   bool switchControl = false;
   String title;
-
-  //OnboardingSwitchClass(title) : this.title = title;
 
   OnboardingSwitchClass({this.title});
 

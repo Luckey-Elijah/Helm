@@ -11,13 +11,13 @@ The default sliderValue is 0.5 with no selection.
  */
 
 class DCSlider extends StatefulWidget {
-  double sliderValue = 0.5;
+  final double sliderValue = 0.5;
 
   @override
-  _DCSLIDERS createState() => new _DCSLIDERS();
+  _DCSliders createState() => new _DCSliders();
 }
 
-class _DCSLIDERS extends State {
+class _DCSliders extends State {
   DCSlider mySlider = new DCSlider();
 
   @override
@@ -27,8 +27,11 @@ class _DCSLIDERS extends State {
       children: <Widget>[
         Align(
           alignment: Alignment(-.993, 0),
-          child: Text("👍",
-              textAlign: TextAlign.left, style: TextStyle(color: Colors.white)),
+          child: Text(
+            "👍",
+            textAlign: TextAlign.left,
+            style: TextStyle(color: Colors.white),
+          ),
         ),
         Slider(
           value: mySlider.sliderValue,
@@ -37,7 +40,7 @@ class _DCSLIDERS extends State {
           min: 0.0,
           max: 1.0,
           divisions: 2,
-          onChanged: sliderStatus,
+          onChanged: (null),
         ),
         Align(
             alignment: Alignment(.993, 0),
@@ -48,10 +51,10 @@ class _DCSLIDERS extends State {
     );
   }
 
-  void sliderStatus(double input) {
-    setState(() {
-      print(mySlider.sliderValue);
-      mySlider.sliderValue = input;
-    });
-  }
+  // void sliderStatus(double input) {
+  //   setState(() {
+  //     print(mySlider.sliderValue);
+  //     mySlider.sliderValue = input;
+  //   });
+  // }
 }

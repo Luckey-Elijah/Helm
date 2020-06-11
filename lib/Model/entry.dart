@@ -11,8 +11,6 @@ class Entry {
     dateTime = DateTime.now();
   }
 
-  // JSON Serialation //
-
   /// Reads the JSON encoding from a the [Map<String, dynamic>]
   Entry.fromJson(Map<String, dynamic> json)
       : title = json['title'],

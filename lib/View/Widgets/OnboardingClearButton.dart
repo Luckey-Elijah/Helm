@@ -2,13 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingClearButton extends StatefulWidget {
-  double height, width;
-  String buttonText;
+  final double height, width;
+  final String buttonText;
 
   OnboardingClearButton({this.height, this.width, this.buttonText});
+
   @override
   ClearButtonState createState() => new ClearButtonState(
-      height: height, width: width, buttonText: buttonText);
+        height: height,
+        width: width,
+        buttonText: buttonText,
+      );
 }
 
 class ClearButtonState extends State {
@@ -22,7 +26,6 @@ class ClearButtonState extends State {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return SizedBox(
       height: height,
       width: width,

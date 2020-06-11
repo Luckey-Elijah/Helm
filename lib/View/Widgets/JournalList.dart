@@ -1,19 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-// import 'package:senior_design/Model/JournalEntry.dart';
-import 'package:senior_design/View/JournalView.dart';
+import '../JournalView.dart';
 import '../../Model/entry.dart';
 
-import '../Helm.dart';
-
 class JournalList extends StatelessWidget {
-  List<Entry> list;
+  final List<Entry> list;
 
   JournalList({this.list});
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return ListView.builder(
       itemCount: list.length,
       scrollDirection: Axis.vertical,

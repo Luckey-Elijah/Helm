@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class TaskList extends StatelessWidget {
-  String title;
+  final String title;
 
   TaskList({this.title});
 
@@ -11,12 +11,11 @@ class TaskList extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.lightGreen,
       body: ListView.builder(
-        //item.Count:,
         scrollDirection: Axis.vertical,
         shrinkWrap: true,
         physics: const AlwaysScrollableScrollPhysics(),
         itemBuilder: (context, index) {
-          // title:,
+          return null;
         },
       ),
     );

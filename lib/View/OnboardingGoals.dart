@@ -1,14 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:senior_design/View/OnboardingView.dart';
-import 'package:senior_design/View/Widgets/OnboardingClearButton.dart';
-
+import 'OnboardingView.dart';
+import 'Widgets/OnboardingClearButton.dart';
 import 'Widgets/OnboardingButton.dart';
 
 class OnboardingGoals extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       backgroundColor: Colors.green,
       body: Stack(
