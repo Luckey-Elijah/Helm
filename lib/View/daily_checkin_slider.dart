@@ -76,7 +76,7 @@ class DailyCheckin extends StatelessWidget {
                       fontSize: 14,
                       fontFamily: 'Gotham-Light')),
             ),
-            DCSlider(),
+            DcSlider(),
 
             Padding(
               padding: const EdgeInsets.all(16),
@@ -87,7 +87,7 @@ class DailyCheckin extends StatelessWidget {
                       fontSize: 14,
                       fontFamily: 'Gotham-Light')),
             ),
-            DCSlider(),
+            DcSlider(),
 
             Padding(
               padding: const EdgeInsets.all(16),
@@ -98,7 +98,7 @@ class DailyCheckin extends StatelessWidget {
                       fontSize: 14,
                       fontFamily: 'Gotham-Light')),
             ),
-            DCSlider(),
+            DcSlider(),
 
             Padding(
               padding: const EdgeInsets.all(16),
@@ -109,7 +109,7 @@ class DailyCheckin extends StatelessWidget {
                       fontSize: 14,
                       fontFamily: 'Gotham-Light')),
             ),
-            DCSlider(),
+            DcSlider(),
 
             Padding(
               padding: const EdgeInsets.all(16),
@@ -120,7 +120,7 @@ class DailyCheckin extends StatelessWidget {
                       fontSize: 14,
                       fontFamily: 'Gotham-Light')),
             ),
-            DCSlider(),
+            DcSlider(),
 
             Padding(
               padding: const EdgeInsets.all(16),
@@ -131,7 +131,7 @@ class DailyCheckin extends StatelessWidget {
                       fontSize: 14,
                       fontFamily: 'Gotham-Light')),
             ),
-            DCSlider(),
+            DcSlider(),
 
             Padding(
               padding: const EdgeInsets.all(16),
@@ -142,7 +142,7 @@ class DailyCheckin extends StatelessWidget {
                       fontSize: 14,
                       fontFamily: 'Gotham-Light')),
             ),
-            DCSlider(),
+            DcSlider(),
 
             Padding(
               padding: const EdgeInsets.all(5),

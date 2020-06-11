@@ -10,15 +10,15 @@ The default sliderValue is 0.5 with no selection.
 
  */
 
-class DCSlider extends StatefulWidget {
+class DcSlider extends StatefulWidget {
   final double sliderValue = 0.5;
 
   @override
-  _DCSliders createState() => new _DCSliders();
+  _DcSliders createState() => new _DcSliders();
 }
 
-class _DCSliders extends State {
-  DCSlider mySlider = new DCSlider();
+class _DcSliders extends State {
+  DcSlider mySlider = new DcSlider();
 
   @override
   Widget build(BuildContext context) {

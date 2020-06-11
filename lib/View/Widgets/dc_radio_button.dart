@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class DCRadioButton extends StatelessWidget {
+class DcRadioButton extends StatelessWidget {
   final int groupThumbs = 0;
 
   @override

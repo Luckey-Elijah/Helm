@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'widgets/onboarding_clear_button.dart';
 import 'widgets/temp_Button.dart';
 
-class DCThumbsUpandDown extends StatelessWidget {
+class DcThumbsUpandDown extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
