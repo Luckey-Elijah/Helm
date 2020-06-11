@@ -11,6 +11,7 @@ class PhotoButton extends StatefulWidget {
 }
 
 class PhotoState extends State<PhotoButton> {
+  final ImagePicker picker = ImagePicker();
   var future;
   String path = "yeeet";
   int bSwitch = 0;
@@ -46,16 +47,16 @@ class PhotoState extends State<PhotoButton> {
   }
 
   void getLibrary() async {
-    final file = await ImagePicker.pickImage(source: ImageSource.gallery);
-    path = file.path;
+    PickedFile pickedFile = await picker.getImage(source: ImageSource.camera);
+    path = pickedFile.path;
 
     final prefs = await SharedPreferences.getInstance();
     prefs.setString("PhotoPath", path);
   }
 
   void getCamera() async {
-    var image = await ImagePicker.pickImage(source: ImageSource.camera);
-    path = image.path;
+    PickedFile pickedFile = await picker.getImage(source: ImageSource.camera);
+    path = pickedFile.path;
 
     final prefs = await SharedPreferences.getInstance();
     prefs.setString("PhotoPath", path);

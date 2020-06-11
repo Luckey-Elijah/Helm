@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -28,7 +27,7 @@ class _OnboardingPhotoButtonState extends State<OnboardingPhotoButton> {
 
   var file;
 
-  ProfileData pData = new ProfileData();
+  ProfileData profileData = ProfileData();
 
   @override
   Widget build(BuildContext context) {
@@ -42,8 +41,8 @@ class _OnboardingPhotoButtonState extends State<OnboardingPhotoButton> {
         color: Colors.orange,
         onPressed: () {
           getPaths();
-          pData.setBio(widget.bio);
-          pData.setName(widget.name);
+          profileData.bio = widget.bio;
+          profileData.name = widget.name;
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => OnboardingGoals()),
@@ -56,9 +55,9 @@ class _OnboardingPhotoButtonState extends State<OnboardingPhotoButton> {
   Future getPaths() async {
     final prefs = await SharedPreferences.getInstance();
     photoPath = prefs.getString("PhotoPath");
-    pData.setImage(photoPath);
-    File file = new File(photoPath);
-    pData.setFile(file);
+    profileData.imagePath = photoPath;
+    File file = File(photoPath);
+    profileData.image = file;
     prefs.remove("PhotoPath");
   }
 }

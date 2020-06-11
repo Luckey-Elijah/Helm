@@ -6,65 +6,37 @@ class ProfileData {
   String name;
   String bio;
   String imagePath;
-  File imageFile;
+  PickedFile _image;
+  final ImagePicker picker = ImagePicker();
 
   final String keyPrefix = 'profile-';
 
-  ProfileData({this.name, this.bio, this.imagePath}) {
-    if (this.imagePath != null) this.imageFile = new File(this.imagePath);
+  set image(File file) {
+    _image = PickedFile(file.path);
   }
 
-  String getName() {
-    return this.name;
-  }
-
-  setName(name) {
-    this.name = name;
-  }
-
-  String getBio() {
-    return this.bio;
-  }
-
-  setBio(bio) {
-    this.bio = bio;
-  }
-
-  setImage(imagePath) {
-    this.imagePath = imagePath;
-  }
-
-  getImage() {
-    return imagePath;
-  }
-
-  setFile(image) {
-    imageFile = image;
-  }
+  ProfileData({this.name, this.bio, this.imagePath});
 
   // Brings up system screen for the phone's gallery
   Future selectGalleryImage() async {
-    var image = await ImagePicker.pickImage(source: ImageSource.gallery);
+    PickedFile pickedFile = await picker.getImage(source: ImageSource.camera);
 
-    if (image != null) {
-      print('image: $image');
-      print('imagePath: ' + image.path);
+    if (pickedFile != null) {
+      print('pickedFile: $pickedFile');
+      print('imagePath: ' + pickedFile.path);
 
-      this.imageFile = image;
-      this.imagePath = image.path;
+      this.imagePath = pickedFile.path;
     }
   }
 
   // Brings up system screen for the phone's camera
   Future selectCameraImage() async {
-    var image = await ImagePicker.pickImage(source: ImageSource.camera);
+    PickedFile pickedFile = await picker.getImage(source: ImageSource.camera);
+    if (pickedFile != null) {
+      print('pickedFile: $pickedFile');
+      print('imagePath: ' + pickedFile.path);
 
-    if (image != null) {
-      print('image: $image');
-      print('imagePath: ' + image.path);
-
-      this.imageFile = image;
-      this.imagePath = image.path;
+      this.imagePath = pickedFile.path;
     }
   }
 
