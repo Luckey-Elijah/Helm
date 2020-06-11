@@ -29,7 +29,7 @@ class CampView extends StatelessWidget {
           Align(
             alignment: Alignment(0, -0.2),
             child: ProfileNameText(
-              profileName: null,
+              profileName: 'Name Here',
             ),
           ),
           Align(
