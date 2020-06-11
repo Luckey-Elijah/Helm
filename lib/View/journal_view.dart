@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'Widgets/DeleteJournalButton.dart';
+import 'widgets/delete_journal_button.dart';
 
 class JournalView extends StatelessWidget {
   final String name;

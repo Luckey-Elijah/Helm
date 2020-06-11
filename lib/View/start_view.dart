@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'Helm.dart';
-import 'OnboardingBasicView.dart';
-import 'Widgets/ClearButton.dart';
-import 'Widgets/LoginButton.dart';
+import 'helm.dart';
+import 'onboarding_basic_view.dart';
+import 'widgets/clear_button.dart';
+import 'widgets/login_button.dart';
 
 class LoginView extends StatelessWidget {
   final LoginButton button = new LoginButton();

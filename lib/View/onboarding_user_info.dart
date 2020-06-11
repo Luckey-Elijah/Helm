@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'Widgets/PhotoButton.dart';
-
-import 'OnboardingGoals.dart';
-import 'Widgets/OnboardingPhotoButton.dart';
+import 'widgets/photo_button.dart';
+import 'onboarding_goals.dart';
+import 'widgets/onboarding_photo_button.dart';
 
 class OnboardingUserInfo extends StatefulWidget {
   final String name;

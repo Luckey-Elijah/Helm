@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../JournalEntryView.dart';
+import '../journal_entry_view.dart';
 
 // Only a placeholder button that will be replaced once the DailyCheckinSlider view
 // has the code to change the data of LoginButton or another button

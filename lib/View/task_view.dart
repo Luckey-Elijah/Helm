@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'TaskListView.dart';
-import 'Widgets/GlowyButton.dart';
+import 'task_list_view.dart';
+import 'widgets/glowy_button.dart';
 
 class TaskView extends StatelessWidget {
   final TaskList listView = new TaskList();

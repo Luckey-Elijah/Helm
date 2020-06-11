@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../Helm.dart';
+import '../helm.dart';
 import '../../Model/journal.dart';
 
 class DeleteJournalButton extends StatelessWidget {

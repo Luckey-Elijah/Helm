@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'OnboardingUserInfo.dart';
-import 'Widgets/DropdownButton.dart';
-import 'Widgets/OnboardingBasicButton.dart';
+import 'onboarding_user_info.dart';
+import 'widgets/dropdown_button.dart';
+import 'widgets/onboarding_basic_button.dart';
 
 class OnboardingBasicView extends StatefulWidget {
   final String name = "";

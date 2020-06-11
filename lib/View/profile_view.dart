@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'Widgets/StatGraph.dart';
+import 'widgets/stat_graph.dart';
 
 class ProfileView extends StatelessWidget {
   @override

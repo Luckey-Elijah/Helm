@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'JournalEntryView.dart';
-import 'Widgets/TempButton.dart';
-import 'Widgets/DCSlider.dart';
+import 'journal_entry_view.dart';
+import 'widgets/temp_button.dart';
+import 'widgets/dc_slider.dart';
 
 /*
 =============================

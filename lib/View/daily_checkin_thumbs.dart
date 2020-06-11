@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'Widgets/OnboardingClearButton.dart';
-import 'Widgets/TempButton.dart';
+import 'widgets/onboarding_clear_button.dart';
+import 'widgets/temp_Button.dart';
 
 class DCThumbsUpandDown extends StatelessWidget {
   @override

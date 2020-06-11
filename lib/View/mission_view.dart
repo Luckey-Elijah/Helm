@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'TaskListView.dart';
-import 'Widgets/GlowyButton.dart';
-import 'Widgets/MissionButton.dart';
+import 'task_list_view.dart';
+import 'widgets/glowy_button.dart';
+import 'widgets/mission_button.dart';
 
 class MissionView extends StatelessWidget {
   final MissionButton missionButton = new MissionButton();

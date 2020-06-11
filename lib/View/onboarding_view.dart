@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'Helm.dart';
-import 'Widgets/OnboardingButton.dart';
-import 'Widgets/OnboardingSlider.dart';
+import 'helm.dart';
+import 'widgets/onboarding_button.dart';
+import 'widgets/onboarding_slider.dart';
 
 class OnboardingView extends StatelessWidget {
   @override

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'Widgets/JournalList.dart';
+import 'widgets/journal_list.dart';
 import '../Model/journal.dart';
 
 class DailyCheckinRetrieval extends StatelessWidget {

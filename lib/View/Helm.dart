@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'CampView.dart';
-import 'MissionView.dart';
-import 'ProfileView.dart';
-import 'ResourceView.dart';
+import 'camp_view.dart';
+import 'mission_view.dart';
+import 'profile_view.dart';
+import 'resource_view.dart';
 
 class Helm extends StatelessWidget {
   @override

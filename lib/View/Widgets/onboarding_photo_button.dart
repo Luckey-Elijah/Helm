@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../Model/profile_data.dart';
-import '../OnboardingGoals.dart';
+import '../onboarding_goals.dart';
 
 class OnboardingPhotoButton extends StatefulWidget {
   final String buttonLabel;

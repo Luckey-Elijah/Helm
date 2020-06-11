@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../JournalView.dart';
+import '../journal_view.dart';
 import '../../Model/entry.dart';
 
 class JournalList extends StatelessWidget {

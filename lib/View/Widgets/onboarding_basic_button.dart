@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../OnboardingUserInfo.dart';
+import '../onboarding_user_info.dart';
 
 class OnboardingBasicButton extends StatelessWidget {
   final String buttonLabel;

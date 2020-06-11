@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'DailyCheckinSlider.dart';
-import 'Widgets/ProfileNameText.dart';
-import 'Widgets/ProfilePicture.dart';
-import 'Widgets/OnboardingButton.dart';
-import 'DailyCheckinRetrieval.dart';
+import 'daily_checkin_slider.dart';
+import 'daily_checkin_retrieval.dart';
+import 'widgets/profile_name_text.dart';
+import 'widgets/profile_picture.dart';
+import 'widgets/onboarding_button.dart';
 
 class CampView extends StatelessWidget {
   @override

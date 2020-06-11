@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'Helm.dart';
-import 'Widgets/JournalButton.dart';
+import 'helm.dart';
+import 'widgets/journal_button.dart';
 
 class JournalEntryView extends StatefulWidget {
   @override

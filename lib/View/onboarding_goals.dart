@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'OnboardingView.dart';
-import 'Widgets/OnboardingClearButton.dart';
-import 'Widgets/OnboardingButton.dart';
+import 'onboarding_view.dart';
+import 'widgets/onboarding_clear_button.dart';
+import 'widgets/onboarding_button.dart';
 
 class OnboardingGoals extends StatelessWidget {
   @override
