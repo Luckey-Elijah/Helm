@@ -6,14 +6,11 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../../Model/profile_data.dart';
 import '../OnboardingGoals.dart';
 
-class OnboardingPhotoButton extends StatelessWidget {
+class OnboardingPhotoButton extends StatefulWidget {
   final String buttonLabel;
   final Widget screen;
-  // TODO: [photoPath] should be [final] and change [getPaths()] appropiately.
-  String photoPath = '';
   final String name;
   final String bio;
-  var file;
 
   OnboardingPhotoButton({
     this.buttonLabel,
@@ -22,21 +19,31 @@ class OnboardingPhotoButton extends StatelessWidget {
     this.name,
   });
 
+  @override
+  _OnboardingPhotoButtonState createState() => _OnboardingPhotoButtonState();
+}
+
+class _OnboardingPhotoButtonState extends State<OnboardingPhotoButton> {
+  String photoPath = '';
+
+  var file;
+
   ProfileData pData = new ProfileData();
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: 200,
       height: 60,
       child: RaisedButton(
-        child: Text(buttonLabel,
+        child: Text(widget.buttonLabel,
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white, fontSize: 20)),
         color: Colors.orange,
         onPressed: () {
           getPaths();
-          pData.setBio(bio);
-          pData.setName(name);
+          pData.setBio(widget.bio);
+          pData.setName(widget.name);
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => OnboardingGoals()),
