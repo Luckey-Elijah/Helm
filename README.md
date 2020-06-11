@@ -14,7 +14,7 @@ git clone https://github.com/Luckey-Elijah/Helm.git
 cd Helm
 
 # Run our app!
-flutter pub get && flutter run lib/View/main.dart
+flutter pub get && flutter run
 ```
 
 ## Issues
