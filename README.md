@@ -17,6 +17,12 @@ cd Helm
 flutter pub get && flutter run
 ```
 
+## Demo
+
+![Demo 1](demo/helm-demo-1.gif)
+![Demo 2](demo/helm-demo-2.gif)
+![Demo 3](demo/helm-demo-3.gif)
+
 ## Issues
 
 The project in not complete so if you're finding problems, please file an issue [here](https://github.com/Luckey-Elijah/Helm/issues/new/choose).
