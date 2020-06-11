@@ -15,7 +15,7 @@ class TaskView extends StatelessWidget {
           new Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('Assets/TaskBackgroundImage.png'),
+                image: AssetImage('assets/TaskBackgroundImage.png'),
                 fit: BoxFit.cover,
               ),
             ),

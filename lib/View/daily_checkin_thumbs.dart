@@ -11,7 +11,7 @@ class DcThumbsUpandDown extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('Assets/OnBoardingScreens.jpg'),
+              image: AssetImage('assets/OnBoardingScreens.jpg'),
               fit: BoxFit.cover,
             ),
           ),

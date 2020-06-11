@@ -29,11 +29,11 @@ class DailyCheckin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: Colors.lightGreen,
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('Assets/OnBoardingScreens.jpg'),
+            image: AssetImage('assets/OnBoardingScreens.jpg'),
             fit: BoxFit.cover,
           ),
         ),

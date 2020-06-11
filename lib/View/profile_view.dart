@@ -12,7 +12,7 @@ class ProfileView extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('Assets/SkillsBackground.jpg'),
+                image: AssetImage('assets/SkillsBackground.jpg'),
                 fit: BoxFit.cover,
               ),
             ),

@@ -36,7 +36,7 @@ Widget _signInButton() {
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Image(image: AssetImage('Assets/MindIcon.jpg'), height: 35.0),
+          Image(image: AssetImage('assets/MindIcon.jpg'), height: 35.0),
           Padding(
             padding: const EdgeInsets.only(left: 10),
             child: Text(
@@ -66,7 +66,7 @@ Widget _signOutButton() {
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Image(image: AssetImage('Assets/MindIcon.jpg'), height: 35.0),
+          Image(image: AssetImage('assets/MindIcon.jpg'), height: 35.0),
           Padding(
             padding: const EdgeInsets.only(left: 10),
             child: Text(

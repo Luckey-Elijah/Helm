@@ -8,14 +8,14 @@ class OnboardingGoals extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: Colors.lightGreen,
       body: Stack(
         alignment: Alignment.center,
         children: <Widget>[
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('Assets/OnboardingGoalsBackground.jpg'),
+                image: AssetImage('assets/OnboardingGoalsBackground.jpg'),
                 fit: BoxFit.cover,
               ),
             ),

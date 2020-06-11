@@ -16,6 +16,7 @@ class OnboardingBasicButton extends StatelessWidget {
       width: 200,
       height: 60,
       child: RaisedButton(
+        shape: StadiumBorder(),
         child: Text(buttonLabel,
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white, fontSize: 20)),

@@ -8,16 +8,17 @@ class LoginButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 400,
+      width: 300,
       height: 60,
       child: RaisedButton(
+        shape: StadiumBorder(),
         child: Text(
           "Start my journey",
           textAlign: TextAlign.center,
           style: TextStyle(
               color: Colors.white, fontSize: 20, fontFamily: "Gotham-Light"),
         ),
-        color: Colors.green,
+        color: Colors.lightGreen,
         onPressed: () {
           Navigator.push(
             context,

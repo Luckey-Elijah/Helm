@@ -1,4 +1,4 @@
-name: senior_design
+name: helm
 description: A new Flutter application.
 
 # The following defines the version and build number for your application.
@@ -14,9 +14,7 @@ description: A new Flutter application.
 version: 1.0.0+1
 
 environment:
-
   sdk: ">=2.2.0 <3.0.0"
-
 
 dependencies:
   flutter:
@@ -42,16 +40,12 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
 # The following section is specific to Flutter.
 flutter:
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -84,46 +78,46 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
-    - Assets/TaskBackgroundImage.png
-    - Assets/MissionBackground.jpg
-    - Assets/CampBackground.jpg
-    - Assets/ResourceBackground.jpg
-    - Assets/SkillsBackground.jpg
-    - Assets/MindIcon.jpg
-    - Assets/LoginBackground.jpg
-    - Assets/Tent.png
-    - Assets/OnboardingGoalsBackground.jpg
-    - Assets/ResourcesScreen.jpg
-    - Assets/OnBoardingScreens.jpg
-    - Assets/init_mission_data.json
+    - assets/TaskBackgroundImage.png
+    - assets/MissionBackground.jpg
+    - assets/CampBackground.jpg
+    - assets/ResourceBackground.jpg
+    - assets/SkillsBackground.jpg
+    - assets/MindIcon.jpg
+    - assets/LoginBackground.jpg
+    - assets/Tent.png
+    - assets/OnboardingGoalsBackground.jpg
+    - assets/ResourcesScreen.jpg
+    - assets/OnBoardingScreens.jpg
+    - assets/init_mission_data.json
 
   fonts:
     - family: Gotham-Book
       fonts:
-        - asset: Assets/Fonts/Gotham-Book.otf
+        - asset: assets/Fonts/Gotham-Book.otf
 
     - family: Gotham-Light
       fonts:
-        - asset: Assets/Fonts/Gotham-Light.otf
+        - asset: assets/Fonts/Gotham-Light.otf
 
     - family: Gotham-Medium
       fonts:
-        - asset: Assets/Fonts/Gotham-Medium.otf
+        - asset: assets/Fonts/Gotham-Medium.otf
     - family: Gotham-Thin
       fonts:
-        - asset: Assets/Fonts/Gotham-Thin.otf
+        - asset: assets/Fonts/Gotham-Thin.otf
     - family: Gotham-Ultra
       fonts:
-        - asset: Assets/Fonts/Gotham-Ultra.otf
+        - asset: assets/Fonts/Gotham-Ultra.otf
     - family: GothamNarrow-Black
       fonts:
-        - asset: Assets/Fonts/GothamNarrow-Black.otf
+        - asset: assets/Fonts/GothamNarrow-Black.otf
     - family: GothamNarrow-Book
       fonts:
-        - asset: Assets/Fonts/GothamNarrow-Book.otf
+        - asset: assets/Fonts/GothamNarrow-Book.otf
     - family: GothamNarrow-Thin
       fonts:
-        - asset: Assets/Fonts/GothamNarrow-Thin.otf
+        - asset: assets/Fonts/GothamNarrow-Thin.otf
     - family: GothamNarrow-Ultra
       fonts:
-        - asset: Assets/Fonts/GothamNarrow-Ultra.otf
+        - asset: assets/Fonts/GothamNarrow-Ultra.otf

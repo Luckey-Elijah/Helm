@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 
 Future<String> _loadMissionAsset() async {
-  return await rootBundle.loadString('Assets/init_mission_data.json');
+  return await rootBundle.loadString('assets/init_mission_data.json');
 }
 
 void _parseJson(String json) {

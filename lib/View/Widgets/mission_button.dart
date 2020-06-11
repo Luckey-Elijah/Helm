@@ -28,7 +28,7 @@ class MissionButton extends StatelessWidget {
                 inherit: true,
                 fontSize: 28.0,
                 fontFamily: 'GothamNarrow-Book',
-                color: pressAttention ? Colors.white : Colors.green,
+                color: pressAttention ? Colors.white : Colors.lightGreen,
               ),
             ),
           )
@@ -58,7 +58,7 @@ missionPopup(
           style: TextStyle(color: Colors.white, fontSize: 20),
         ),
         onPressed: () => pressAttention = !pressAttention,
-        color: Colors.green,
+        color: Colors.lightGreen,
       )
     ],
   ).show();

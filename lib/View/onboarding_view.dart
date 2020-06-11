@@ -12,7 +12,7 @@ class OnboardingView extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('Assets/OnboardingGoalsBackground.jpg'),
+            image: AssetImage('assets/OnboardingGoalsBackground.jpg'),
             fit: BoxFit.cover,
           ),
         ),

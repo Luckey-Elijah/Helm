@@ -20,14 +20,17 @@ class LoginView extends StatelessWidget {
           new Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('Assets/LoginBackground.jpg'),
+                image: AssetImage('assets/LoginBackground.jpg'),
                 fit: BoxFit.cover,
               ),
             ),
           ),
           Align(
               alignment: Alignment(0, -.5),
-              child: Image.asset('Assets/Tent.png')),
+              child: Image.asset(
+                'assets/Tent.png',
+                color: Colors.white,
+              )),
           Align(
             alignment: Alignment(0, -.3),
             child: Text("Helm",

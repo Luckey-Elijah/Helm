@@ -19,7 +19,7 @@ class MissionView extends StatelessWidget {
           new Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('Assets/MissionBackground.jpg'),
+                image: AssetImage('assets/MissionBackground.jpg'),
                 fit: BoxFit.cover,
               ),
             ),

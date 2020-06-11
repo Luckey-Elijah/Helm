@@ -18,7 +18,7 @@ class DailyCheckinRetrieval extends StatelessWidget {
     print(helmJournal.entryList.length.toString());
 
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: Colors.lightGreen,
       body: Stack(
         children: <Widget>[
           JournalList(

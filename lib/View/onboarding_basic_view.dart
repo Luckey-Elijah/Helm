@@ -21,7 +21,7 @@ class BasicViewState extends State<OnboardingBasicView> {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('Assets/OnboardingGoalsBackground.jpg'),
+                image: AssetImage('assets/OnboardingGoalsBackground.jpg'),
                 fit: BoxFit.cover,
               ),
             ),
@@ -32,6 +32,7 @@ class BasicViewState extends State<OnboardingBasicView> {
               "What is your name?",
               style: TextStyle(
                 color: Colors.white,
+                backgroundColor: Colors.orange,
               ),
             ),
           ),
@@ -59,6 +60,7 @@ class BasicViewState extends State<OnboardingBasicView> {
               "How old are you?",
               style: TextStyle(
                 color: Colors.white,
+                backgroundColor: Colors.orange,
               ),
             ),
           ),
@@ -79,7 +81,10 @@ class BasicViewState extends State<OnboardingBasicView> {
             alignment: Alignment(0, .2),
             child: Text(
               "What is your Gender?",
-              style: TextStyle(color: Colors.white),
+              style: TextStyle(
+                color: Colors.white,
+                backgroundColor: Colors.orange,
+              ),
             ),
           ),
           Align(

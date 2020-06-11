@@ -15,7 +15,7 @@ class CampView extends StatelessWidget {
           new Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('Assets/CampBackground.jpg'),
+                image: AssetImage('assets/CampBackground.jpg'),
                 fit: BoxFit.cover,
               ),
             ),
@@ -23,7 +23,7 @@ class CampView extends StatelessWidget {
           Align(
             alignment: Alignment(0.0, -0.8),
             child: ProfilePicture(
-              imagePath: 'Assets/Icons/MindIcon.jpg',
+              imagePath: 'assets/Icons/MindIcon.jpg',
             ),
           ),
           Align(

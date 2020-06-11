@@ -13,8 +13,10 @@ class ClearButton extends StatelessWidget {
     return SizedBox(
       width: 300,
       height: 50,
-      child: new FlatButton(
+      child: MaterialButton(
         textColor: Colors.white,
+        shape: StadiumBorder(),
+        color: Colors.lightGreen,
         highlightColor: Colors.lightGreen,
         onPressed: () {
           _controller.clear();

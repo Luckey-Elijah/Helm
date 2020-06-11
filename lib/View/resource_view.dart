@@ -22,7 +22,7 @@ class ResourceView extends StatelessWidget {
           new Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('Assets/ResourcesScreen.jpg'),
+                image: AssetImage('assets/ResourcesScreen.jpg'),
                 fit: BoxFit.cover,
               ),
             ),
