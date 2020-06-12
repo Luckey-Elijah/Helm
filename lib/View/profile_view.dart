@@ -20,7 +20,7 @@ class ProfileView extends StatelessWidget {
           Align(
             alignment: Alignment(-.85, -.8),
             child: Text(
-              "Physical Health",
+              'Physical Health',
               style: TextStyle(color: Colors.white),
             ),
           ),
@@ -31,7 +31,7 @@ class ProfileView extends StatelessWidget {
           Align(
             alignment: Alignment(-.85, -.2),
             child: Text(
-              "Productivity",
+              'Productivity',
               style: TextStyle(color: Colors.white),
             ),
           ),
@@ -42,7 +42,7 @@ class ProfileView extends StatelessWidget {
           Align(
             alignment: Alignment(-.85, .4),
             child: Text(
-              "Mentality",
+              'Mentality',
               style: TextStyle(color: Colors.white),
             ),
           ),

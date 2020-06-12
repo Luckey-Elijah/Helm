@@ -19,31 +19,31 @@ class JournalView extends StatelessWidget {
           Align(
             child: Text(date,
                 style:
-                    TextStyle(color: Colors.white, fontFamily: "Gotham-Bold")),
+                    TextStyle(color: Colors.white, fontFamily: 'Gotham-Bold')),
             alignment: Alignment(-0.7, -0.7),
           ),
           Align(
             child: Text(name,
                 style:
-                    TextStyle(color: Colors.white, fontFamily: "Gotham-Bold")),
+                    TextStyle(color: Colors.white, fontFamily: 'Gotham-Bold')),
             alignment: Alignment(-0.7, -0.5),
           ),
           Align(
             child: Text(content,
                 style:
-                    TextStyle(color: Colors.white, fontFamily: "Gotham-Bold")),
+                    TextStyle(color: Colors.white, fontFamily: 'Gotham-Bold')),
             alignment: Alignment(-0.5, -0.3),
           ),
           Align(
             child: DeleteJournalButton(
-              buttonText: "Back",
+              buttonText: 'Back',
               index: -1,
             ),
             alignment: Alignment(.4, .7),
           ),
           Align(
             child: DeleteJournalButton(
-              buttonText: "Delete",
+              buttonText: 'Delete',
               index: index,
             ),
             alignment: Alignment(-.4, .7),

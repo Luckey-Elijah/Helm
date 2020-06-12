@@ -8,7 +8,7 @@ class ProfileNameText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      "Hello " + profileName,
+      'Hello ' + profileName,
       style: TextStyle(color: Colors.white),
     );
   }

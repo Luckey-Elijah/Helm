@@ -19,7 +19,7 @@ class JournalList extends StatelessWidget {
         return ListTile(
           title: Text(list[index].title),
           onTap: () {
-            //  print("tap");
+            //  print('tap');
             Navigator.push(
               context,
               MaterialPageRoute(

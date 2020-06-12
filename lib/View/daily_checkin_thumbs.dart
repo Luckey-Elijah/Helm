@@ -19,7 +19,7 @@ class DcThumbsUpandDown extends StatelessWidget {
         Align(
             alignment: Alignment(0, -0.8),
             child: Text(
-              "How well are you feeling Today?.",
+              'How well are you feeling Today?.',
               style: TextStyle(
                 color: Colors.white,
               ),
@@ -29,14 +29,14 @@ class DcThumbsUpandDown extends StatelessWidget {
             child: OnboardingClearButton(
               height: 50.0,
               width: 50.0,
-              buttonText: "👍",
+              buttonText: '👍',
             )),
         Align(
             alignment: Alignment(.2, -0.73),
             child: OnboardingClearButton(
               height: 50.0,
               width: 50.0,
-              buttonText: "👎",
+              buttonText: '👎',
             )),
         Align(
           alignment: Alignment(0, 0),
@@ -45,7 +45,7 @@ class DcThumbsUpandDown extends StatelessWidget {
         Align(
             alignment: Alignment(0, -0.57),
             child: Text(
-              "Anxious? ",
+              'Anxious? ',
               style: TextStyle(
                 color: Colors.white,
               ),
@@ -55,14 +55,14 @@ class DcThumbsUpandDown extends StatelessWidget {
             child: OnboardingClearButton(
               height: 50.0,
               width: 50.0,
-              buttonText: "👍",
+              buttonText: '👍',
             )),
         Align(
             alignment: Alignment(.2, -0.50),
             child: OnboardingClearButton(
               height: 50.0,
               width: 50.0,
-              buttonText: "👎",
+              buttonText: '👎',
             )),
 
         /*

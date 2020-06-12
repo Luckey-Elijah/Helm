@@ -54,10 +54,10 @@ class _OnboardingPhotoButtonState extends State<OnboardingPhotoButton> {
 
   Future getPaths() async {
     final prefs = await SharedPreferences.getInstance();
-    photoPath = prefs.getString("PhotoPath");
+    photoPath = prefs.getString('PhotoPath');
     profileData.imagePath = photoPath;
     File file = File(photoPath);
     profileData.image = file;
-    prefs.remove("PhotoPath");
+    prefs.remove('PhotoPath');
   }
 }

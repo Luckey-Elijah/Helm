@@ -26,8 +26,8 @@ class ClearButton extends StatelessWidget {
           );
         },
         child: Text(
-          "Already a member? Log In",
-          style: TextStyle(fontSize: 14.0, fontFamily: "Gotham-Light"),
+          'Already a member? Log In',
+          style: TextStyle(fontSize: 14.0, fontFamily: 'Gotham-Light'),
         ),
       ),
     );

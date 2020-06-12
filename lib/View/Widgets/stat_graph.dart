@@ -26,11 +26,11 @@ class StatGraph extends StatelessWidget {
 
     return [
       new charts.Series<GraphData, int>(
-        id: "Test",
+        id: 'Test',
         colorFn: (_, __) => charts.MaterialPalette.white,
         domainFn: (GraphData gdata, _) => gdata.x,
         measureFn: (GraphData gdata, _) => gdata.y,
-        displayName: "Display Name",
+        displayName: 'Display Name',
         seriesColor: charts.MaterialPalette.white,
         data: data,
       ),

@@ -6,7 +6,7 @@ void main() {
 
   runApp(
     MaterialApp(
-      title: "Helm",
+      title: 'Helm',
       home: Scaffold(
         body: PageView(children: <Widget>[loginView]),
       ),

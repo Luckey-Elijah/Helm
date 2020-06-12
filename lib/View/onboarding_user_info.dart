@@ -33,7 +33,7 @@ class OnboardingUserState extends State<OnboardingUserInfo> {
           Align(
             alignment: Alignment(-.7, -.6),
             child: Text(
-              "Profile Picture",
+              'Profile Picture',
               style: TextStyle(
                 color: Colors.white,
               ),
@@ -50,7 +50,7 @@ class OnboardingUserState extends State<OnboardingUserInfo> {
           Align(
             alignment: Alignment(-.7, .15),
             child: Text(
-              "Bio",
+              'Bio',
               style: TextStyle(
                 color: Colors.white,
               ),
@@ -74,7 +74,7 @@ class OnboardingUserState extends State<OnboardingUserInfo> {
           Align(
             alignment: Alignment(0, .8),
             child: OnboardingPhotoButton(
-              buttonLabel: "Continue",
+              buttonLabel: 'Continue',
               screen: OnboardingGoals(),
               bio: bio,
               name: name,

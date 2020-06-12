@@ -22,8 +22,8 @@ class OnboardingView extends StatelessWidget {
             Padding(
               padding: EdgeInsets.fromLTRB(16.0, 0, 0, 0),
               child: Text(
-                  "Think about the last week."
-                  " Rate on a scale of 1-100* how you feel strong in these categories: ",
+                  'Think about the last week.'
+                  ' Rate on a scale of 1-100* how you feel strong in these categories: ',
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.white)),
             ),
@@ -32,7 +32,7 @@ class OnboardingView extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.fromLTRB(0, 16, 0, 4),
                 child:
-                    Text("General Mood", style: TextStyle(color: Colors.white)),
+                    Text('General Mood', style: TextStyle(color: Colors.white)),
               ),
             ),
             OnboardingSlider(),
@@ -40,7 +40,7 @@ class OnboardingView extends StatelessWidget {
               alignment: Alignment(0, 0),
               child: Padding(
                 padding: EdgeInsets.fromLTRB(0, 16.0, 0, 4),
-                child: Text("Peace and Calm",
+                child: Text('Peace and Calm',
                     style: TextStyle(color: Colors.white)),
               ),
             ),
@@ -49,7 +49,7 @@ class OnboardingView extends StatelessWidget {
               alignment: Alignment(0, 0),
               child: Padding(
                 padding: EdgeInsets.fromLTRB(0, 16.0, 0, 4),
-                child: Text("Exercise", style: TextStyle(color: Colors.white)),
+                child: Text('Exercise', style: TextStyle(color: Colors.white)),
               ),
             ),
             OnboardingSlider(),
@@ -58,7 +58,7 @@ class OnboardingView extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.fromLTRB(0, 16.0, 0, 4),
                 child:
-                    Text("Eating Well", style: TextStyle(color: Colors.white)),
+                    Text('Eating Well', style: TextStyle(color: Colors.white)),
               ),
             ),
             OnboardingSlider(),
@@ -67,7 +67,7 @@ class OnboardingView extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.fromLTRB(0, 16.0, 0, 4),
                 child:
-                    Text("Productivity", style: TextStyle(color: Colors.white)),
+                    Text('Productivity', style: TextStyle(color: Colors.white)),
               ),
             ),
             OnboardingSlider(),
@@ -75,7 +75,7 @@ class OnboardingView extends StatelessWidget {
               alignment: Alignment(0, 0),
               child: Padding(
                 padding: EdgeInsets.fromLTRB(0, 16.0, 0, 4),
-                child: Text("Overall Energy",
+                child: Text('Overall Energy',
                     style: TextStyle(color: Colors.white)),
               ),
             ),
@@ -84,12 +84,12 @@ class OnboardingView extends StatelessWidget {
               alignment: Alignment(0, 0),
               child: Padding(
                 padding: EdgeInsets.fromLTRB(0, 16.0, 0, 4),
-                child: Text("Staying Organized",
+                child: Text('Staying Organized',
                     style: TextStyle(color: Colors.white)),
               ),
             ),
             OnboardingSlider(),
-            OnboardingButton(buttonLabel: "Continue", screen: Helm())
+            OnboardingButton(buttonLabel: 'Continue', screen: Helm())
           ],
         ),
       ),

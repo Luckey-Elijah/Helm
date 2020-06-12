@@ -21,81 +21,84 @@ class OnboardingGoals extends StatelessWidget {
             ),
           ),
           Align(
-              alignment: Alignment(0, -0.6),
-              child: Text(
-                "Great, thanks! Now, let's talk about your goals.",
-                style: TextStyle(
-                  color: Colors.white,
-                ),
-              )),
+            alignment: Alignment(0, -0.6),
+            child: Text(
+              'Great, thanks! Now, let\'s talk about your goals.',
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+          ),
           Align(
-              alignment: Alignment(0, -0.4),
-              child: Text(
-                  "Pick your top three categories in which you are most excited to build strength.",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ))),
+            alignment: Alignment(0, -0.4),
+            child: Text(
+              'Pick your top three categories in which you are most excited to build strength.',
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+          ),
           Align(
               alignment: Alignment(-0.5, -.2),
               child: OnboardingClearButton(
                 height: 50.0,
                 width: 110.0,
-                buttonText: "Depression",
+                buttonText: 'Depression',
               )),
           Align(
               alignment: Alignment(.5, -.2),
               child: OnboardingClearButton(
                 height: 50.0,
                 width: 135.0,
-                buttonText: "General Anxiety",
+                buttonText: 'General Anxiety',
               )),
           Align(
               alignment: Alignment(-.9, .0),
               child: OnboardingClearButton(
                 height: 50.0,
                 width: 100.0,
-                buttonText: "Fitness",
+                buttonText: 'Fitness',
               )),
           Align(
               alignment: Alignment(0, 0.0),
               child: OnboardingClearButton(
                 height: 50.0,
                 width: 125.0,
-                buttonText: "Social Anxiety",
+                buttonText: 'Social Anxiety',
               )),
           Align(
               alignment: Alignment(.8, .0),
               child: OnboardingClearButton(
                 height: 50.0,
                 width: 90.0,
-                buttonText: "Nutrition",
+                buttonText: 'Nutrition',
               )),
           Align(
               alignment: Alignment(-.9, .2),
               child: OnboardingClearButton(
                 height: 50.0,
                 width: 125.0,
-                buttonText: "Productivity",
+                buttonText: 'Productivity',
               )),
           Align(
               alignment: Alignment(0, .2),
               child: OnboardingClearButton(
                 height: 50.0,
                 width: 80.0,
-                buttonText: "Energy",
+                buttonText: 'Energy',
               )),
           Align(
               alignment: Alignment(.9, .2),
               child: OnboardingClearButton(
                 height: 50.0,
                 width: 125.0,
-                buttonText: "Organization",
+                buttonText: 'Organization',
               )),
           Align(
               alignment: Alignment(0, .5),
               child: OnboardingButton(
                 screen: OnboardingView(),
-                buttonLabel: "LETS DO IT TOGETHER!",
+                buttonLabel: 'LETS DO IT TOGETHER!',
               ))
         ],
       ),

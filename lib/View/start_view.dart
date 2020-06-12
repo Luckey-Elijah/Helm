@@ -33,7 +33,7 @@ class LoginView extends StatelessWidget {
               )),
           Align(
             alignment: Alignment(0, -.3),
-            child: Text("Helm",
+            child: Text('Helm',
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 40,

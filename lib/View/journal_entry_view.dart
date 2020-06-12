@@ -20,9 +20,9 @@ class _MyCustomFormState extends State<JournalEntryView> {
           Align(
             alignment: Alignment(-.9, -.85),
             child: Text(
-              "Journal Entry",
+              'Journal Entry',
               style: TextStyle(
-                  fontFamily: "Gotham-Light",
+                  fontFamily: 'Gotham-Light',
                   color: Colors.white,
                   fontSize: 20.0),
             ),
@@ -30,9 +30,9 @@ class _MyCustomFormState extends State<JournalEntryView> {
           Align(
             alignment: Alignment(-.9, -.65),
             child: Text(
-              "Title",
+              'Title',
               style: TextStyle(
-                fontFamily: "Gotham-Light",
+                fontFamily: 'Gotham-Light',
                 color: Colors.white,
               ),
             ),
@@ -51,9 +51,9 @@ class _MyCustomFormState extends State<JournalEntryView> {
           Align(
             alignment: Alignment(-.9, -.15),
             child: Text(
-              "Entry",
+              'Entry',
               style: TextStyle(
-                fontFamily: "Gotham-Light",
+                fontFamily: 'Gotham-Light',
                 color: Colors.white,
               ),
             ),
@@ -74,7 +74,7 @@ class _MyCustomFormState extends State<JournalEntryView> {
             child: JournalButton(
               journalTitle: title,
               journalBody: body,
-              buttonLabel: "Continue",
+              buttonLabel: 'Continue',
               screen: Helm(),
             ),
           )

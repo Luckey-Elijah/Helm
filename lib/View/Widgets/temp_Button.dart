@@ -32,13 +32,13 @@ class TempButton extends StatelessWidget {
       height: 60,
       child: RaisedButton(
         child: Text(
-          "Continue",
+          'Continue',
           textAlign: TextAlign.center,
           style: TextStyle(color: Colors.white, fontSize: 20),
         ),
         color: Colors.orange,
         onPressed: () {
-          print("YOU CLICKED ME!");
+          print('YOU CLICKED ME!');
 
           print(importGM);
           print(importAnxiety);

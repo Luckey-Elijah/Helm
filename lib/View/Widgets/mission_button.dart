@@ -42,19 +42,19 @@ missionPopup(
     BuildContext context, String missionTitle, String missionDescription) {
   Alert(
     context: context,
-    title: "\n" + missionTitle,
-    desc: missionDescription + "\n\n\n",
+    title: '\n' + missionTitle,
+    desc: missionDescription + '\n\n\n',
     buttons: [
       DialogButton(
           child: Text(
-            "Okay",
+            'Okay',
             style: TextStyle(color: Colors.white, fontSize: 20),
           ),
           onPressed: () => Navigator.pop(context),
           color: Colors.orange),
       DialogButton(
         child: Text(
-          "Complete",
+          'Complete',
           style: TextStyle(color: Colors.white, fontSize: 20),
         ),
         onPressed: () => pressAttention = !pressAttention,

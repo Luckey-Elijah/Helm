@@ -21,7 +21,7 @@ class TaskView extends StatelessWidget {
             ),
           ),
           Center(
-            child: Text("Tasks Page"),
+            child: Text('Tasks Page'),
           ),
           Align(
               alignment: Alignment(0.5, 0.5), child: glowButton.build(context))

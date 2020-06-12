@@ -9,11 +9,11 @@ class DailyCheckinRetrieval extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Entry entry = new Entry();
-    print("List length " + helmJournal.entryList.length.toString());
+    print('List length ' + helmJournal.entryList.length.toString());
     for (int i = 0; i < helmJournal.entryList.length; i++)
       entry = helmJournal.entryList[i];
 
-    if (entry.title != "" || entry.title != null) print("entry added");
+    if (entry.title != '' || entry.title != null) print('entry added');
 
     print(helmJournal.entryList.length.toString());
 

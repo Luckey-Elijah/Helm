@@ -8,7 +8,7 @@ Future<String> _loadMissionAsset() async {
 
 void _parseJson(String json) {
   Map mMap = jsonDecode(json);
-  print(mMap["missionList"][9]);
+  print(mMap['missionList'][9]);
 }
 
 Future loadMissions() async {

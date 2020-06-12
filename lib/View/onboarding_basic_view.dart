@@ -5,7 +5,7 @@ import 'widgets/dropdown_button.dart';
 import 'widgets/onboarding_basic_button.dart';
 
 class OnboardingBasicView extends StatefulWidget {
-  final String name = "";
+  final String name = '';
   @override
   BasicViewState createState() => BasicViewState();
 }
@@ -29,7 +29,7 @@ class BasicViewState extends State<OnboardingBasicView> {
           Align(
             alignment: Alignment(0, -0.8),
             child: Text(
-              "What is your name?",
+              'What is your name?',
               style: TextStyle(
                 color: Colors.white,
                 backgroundColor: Colors.orange,
@@ -57,7 +57,7 @@ class BasicViewState extends State<OnboardingBasicView> {
           Align(
             alignment: Alignment(0, -.3),
             child: Text(
-              "How old are you?",
+              'How old are you?',
               style: TextStyle(
                 color: Colors.white,
                 backgroundColor: Colors.orange,
@@ -80,7 +80,7 @@ class BasicViewState extends State<OnboardingBasicView> {
           Align(
             alignment: Alignment(0, .2),
             child: Text(
-              "What is your Gender?",
+              'What is your Gender?',
               style: TextStyle(
                 color: Colors.white,
                 backgroundColor: Colors.orange,
@@ -94,7 +94,7 @@ class BasicViewState extends State<OnboardingBasicView> {
           Align(
             alignment: Alignment(0, .8),
             child: OnboardingBasicButton(
-              buttonLabel: "Continue",
+              buttonLabel: 'Continue',
               screen: OnboardingUserInfo(),
             ),
           )

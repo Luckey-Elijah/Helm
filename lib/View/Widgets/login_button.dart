@@ -13,10 +13,10 @@ class LoginButton extends StatelessWidget {
       child: RaisedButton(
         shape: StadiumBorder(),
         child: Text(
-          "Start my journey",
+          'Start my journey',
           textAlign: TextAlign.center,
           style: TextStyle(
-              color: Colors.white, fontSize: 20, fontFamily: "Gotham-Light"),
+              color: Colors.white, fontSize: 20, fontFamily: 'Gotham-Light'),
         ),
         color: Colors.lightGreen,
         onPressed: () {

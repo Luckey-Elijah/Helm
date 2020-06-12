@@ -12,8 +12,8 @@ class Button extends StatelessWidget {
         child: Row(
           children: <Widget>[
             Text(
-              "Button",
-              style: TextStyle(fontFamily: "Gotham-Light"),
+              'Button',
+              style: TextStyle(fontFamily: 'Gotham-Light'),
             ),
           ],
         ),
