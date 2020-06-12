@@ -4,7 +4,12 @@ class Goal {
   bool completed;
   String category;
 
-  Goal(this.name, this.description, this.completed, this.category);
+  Goal(
+    this.name,
+    this.description,
+    this.completed,
+    this.category,
+  );
 
   Goal.fromJson(Map<String, dynamic> json)
       : name = json['name'],

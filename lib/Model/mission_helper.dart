@@ -13,7 +13,7 @@ class MissionManager {
   Future<void> addMission(Mission mission) async {
     String missionKey = '$_missionPrefix${mission.name}';
     Map<String, dynamic> missionJson = mission.toJson();
-    print(missionJson);
+    print('$missionJson');
     await _jsonStore.setItem(missionKey, missionJson);
   }
 

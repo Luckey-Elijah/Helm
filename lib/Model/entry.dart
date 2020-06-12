@@ -4,10 +4,17 @@ class Entry {
   DateTime dateTime;
 
   /// Constructor for the [Entry] class
-  Entry({this.title, this.body, this.dateTime});
+  Entry({
+    this.title,
+    this.body,
+    this.dateTime,
+  });
 
   /// Named constructor using [DateTime.now();]
-  Entry.now({this.title, this.body}) {
+  Entry.now({
+    this.title,
+    this.body,
+  }) {
     dateTime = DateTime.now();
   }
 

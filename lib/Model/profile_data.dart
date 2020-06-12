@@ -19,7 +19,11 @@ class ProfileData {
     return _image;
   }
 
-  ProfileData({this.name, this.bio, this.imagePath});
+  ProfileData({
+    this.name,
+    this.bio,
+    this.imagePath,
+  });
 
   // Brings up system screen for the phone's gallery
   Future selectGalleryImage() async {
