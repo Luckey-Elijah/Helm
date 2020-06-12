@@ -30,7 +30,6 @@ dependencies:
   image_picker:
   url_launcher:
   shared_preferences:
-  flutter_launcher_icons:
 
 dev_dependencies:
   flutter_test:
