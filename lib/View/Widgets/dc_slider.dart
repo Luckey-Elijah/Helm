@@ -50,10 +50,10 @@ class _DcSliders extends State {
     );
   }
 
-  // void sliderStatus(double input) {
-  //   setState(() {
-  //     print(mySlider.sliderValue);
-  //     mySlider.sliderValue = input;
-  //   });
-  // }
+  void sliderStatus(double input) {
+    setState(() {
+      print(sliderValue);
+      sliderValue = input;
+    });
+  }
 }
